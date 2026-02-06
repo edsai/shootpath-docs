@@ -567,7 +567,7 @@ Yes, emails come FROM your email address (the one you connected in Settings → 
 Yes:
 1. Go to **Settings → Business Information**
 2. Update **Business Name**
-3. Emails will show as: "Business Name <your-email@example.com>"
+3. Emails will show as: "Business Name" with your email address
 
 **What if Gmail blocks my account?**
 If Gmail suspects unusual activity:
