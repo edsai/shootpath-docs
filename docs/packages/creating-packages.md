@@ -450,9 +450,9 @@ Now that you've created packages, you're ready to use them on quotes and explore
 
 **Ready to add optional extras?** Learn about [Add-Ons](./add-ons)
 
-**Need to send your first quote?** Check out [Sending a Quote](/docs/getting-started/sending-a-quote)
+**Need to send your first quote?** Check out [Sending a Quote](/getting-started/sending-a-quote)
 
-**Understanding the full sales process?** See [Understanding Leads](/docs/getting-started/understanding-leads)
+**Understanding the full sales process?** See [Understanding Leads](/getting-started/understanding-leads)
 
 ---
 

@@ -568,9 +568,9 @@ Now that you know how to customize quote templates, explore these topics:
 
 **Learn to create quotes** → [Creating Quotes](./creating-quotes)
 
-**Set up packages and pricing** → [Packages Documentation](/docs/packages)
+**Set up packages and pricing** → [Packages Documentation](/packages)
 
-**Understand contract templates** → [Contract Templates](/docs/contracts)
+**Understand contract templates** → [Contract Templates](/contracts)
 
 ---
 

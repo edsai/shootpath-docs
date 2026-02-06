@@ -358,7 +358,7 @@ Now that you understand photography contracts, you're ready to create your own!
 
 **Need to understand signing?** [Read about e-signatures](./e-signatures)
 
-**Curious about the full booking flow?** [See Understanding Contracts](/docs/getting-started/understanding-contracts)
+**Curious about the full booking flow?** [See Understanding Contracts](/getting-started/understanding-contracts)
 
 ---
 

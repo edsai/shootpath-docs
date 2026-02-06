@@ -412,7 +412,7 @@ The client clicks the link in their email and lands on the contract page.
 - Contract is executed immediately
 
 **Learn More:**
-See [Understanding Contracts](/docs/getting-started/understanding-contracts) for full details on the signing experience.
+See [Understanding Contracts](/getting-started/understanding-contracts) for full details on the signing experience.
 
 #### 4. Payment Submission
 
@@ -638,7 +638,7 @@ Now that you understand the client experience, you can create quotes that conver
 
 **Track and follow up** → [Managing Quotes](./managing-quotes)
 
-**Understand the full workflow** → [Understanding Jobs](/docs/getting-started/understanding-jobs)
+**Understand the full workflow** → [Understanding Jobs](/getting-started/understanding-jobs)
 
 ---
 

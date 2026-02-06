@@ -436,9 +436,9 @@ Now that you understand pricing strategy, you're ready to implement it!
 
 **Want to add optional extras?** Learn about [Add-Ons](./add-ons)
 
-**Need to send your first quote?** Check out [Sending a Quote](/docs/getting-started/sending-a-quote)
+**Need to send your first quote?** Check out [Sending a Quote](/getting-started/sending-a-quote)
 
-**Curious about payment collection?** See [Understanding Payments](/docs/getting-started/understanding-payments)
+**Curious about payment collection?** See [Understanding Payments](/getting-started/understanding-payments)
 
 ---
 

@@ -300,7 +300,7 @@ Now that you understand packages, you're ready to build your own offering:
 
 **Curious about optional extras?** Read about [Add-Ons](./add-ons)
 
-**Need to understand the full workflow?** See [Sending a Quote](/docs/getting-started/sending-a-quote)
+**Need to understand the full workflow?** See [Sending a Quote](/getting-started/sending-a-quote)
 
 ---
 

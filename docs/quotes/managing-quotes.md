@@ -106,7 +106,7 @@ The client clicked "Accept Quote" - you got the booking! 🎉
 - Start planning the session
 
 **Next steps:**
-The quote is done - now you're managing a job! Everything from here happens in the [Jobs](/docs/jobs) section.
+The quote is done - now you're managing a job! Everything from here happens in the [Jobs](/jobs) section.
 
 #### Declined
 
@@ -548,9 +548,9 @@ Now that you know how to manage and follow up on quotes, explore these topics:
 
 **See what clients experience** → [Client Experience](./client-experience)
 
-**Set up packages and pricing** → [Packages Documentation](/docs/packages)
+**Set up packages and pricing** → [Packages Documentation](/packages)
 
-**Understand the full workflow** → [Understanding Jobs](/docs/getting-started/understanding-jobs)
+**Understand the full workflow** → [Understanding Jobs](/getting-started/understanding-jobs)
 
 ---
 

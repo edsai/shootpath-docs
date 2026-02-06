@@ -5,7 +5,7 @@ sidebar_position: 2
 # Creating Quotes
 
 :::warning Prerequisites
-Before creating quotes, set up your [Packages and Add-ons](/docs/packages) in Settings. Without these, you won't be able to build a quote!
+Before creating quotes, set up your [Packages and Add-ons](/packages) in Settings. Without these, you won't be able to build a quote!
 :::
 
 ## Quick Reference
@@ -54,7 +54,7 @@ Pre-defined payment structures you can reuse. You can also create custom schedul
 **4. Business Info**
 Your business name, logo, and contact info (Settings > Business) - these appear on your quotes.
 
-If you haven't set these up yet, check out the [Setting Up Your Business](/docs/getting-started/setting-up-your-business) guide first!
+If you haven't set these up yet, check out the [Setting Up Your Business](/getting-started/setting-up-your-business) guide first!
 
 ### Step 1: Open the Lead
 
@@ -552,7 +552,7 @@ Now that you know how to create professional quotes, learn about managing and fo
 
 **Understand the client experience** → [Client Experience](./client-experience)
 
-**Set up packages and add-ons** → [Packages Documentation](/docs/packages)
+**Set up packages and add-ons** → [Packages Documentation](/packages)
 
 ---
 

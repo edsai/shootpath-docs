@@ -428,7 +428,7 @@ Now you understand how to use add-ons to increase revenue and offer flexibility!
 
 **Want to optimize pricing?** Read [Pricing Strategies](./pricing-strategies)
 
-**Ready to send quotes?** Check out [Sending a Quote](/docs/getting-started/sending-a-quote)
+**Ready to send quotes?** Check out [Sending a Quote](/getting-started/sending-a-quote)
 
 ---
 
