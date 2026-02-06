@@ -658,7 +658,7 @@ Every 3-6 months, review your automated emails. Update wording, fix issues, impr
 - Check email log for error messages
 
 **Placeholders not populating?**
-- Ensure you're using correct placeholder syntax: `{{clientName}}` not `{clientName}`
+- Ensure you're using correct placeholder syntax: `{{clientName}}` not `\{clientName\}`
 - Verify the data exists (can't show session date if none is set)
 
 **Wrong email sent?**

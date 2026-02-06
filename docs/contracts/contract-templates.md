@@ -17,7 +17,7 @@ Contract templates are reusable legal agreements that auto-populate with job det
 **Template Essentials:**
 - **Template name** - "Wedding Contract", "Portrait Session Agreement"
 - **Contract content** - Your legal terms in plain text
-- **Template variables** - Placeholders like `{clientName}` that auto-populate
+- **Template variables** - Placeholders like `\{clientName\}` that auto-populate
 - **Activation status** - Active templates appear in job workflows
 - **Job type assignment** - Link templates to specific job types
 
@@ -132,29 +132,29 @@ This is the legal agreement itself. Write in plain English, breaking content int
 
 **1. Introduction / Parties**
 ```
-This Photography Services Agreement ("Agreement") is made on {signedDate}
-between {businessName} ("Photographer") located at {businessAddress}, and
-{clientName} ("Client") located at {clientAddress}.
+This Photography Services Agreement ("Agreement") is made on \{signedDate\}
+between \{businessName\} ("Photographer") located at \{businessAddress\}, and
+\{clientName\} ("Client") located at \{clientAddress\}.
 ```
 
 **2. Services Description**
 ```
-Photographer agrees to provide photography services for Client's {jobType}
-on {sessionDate} at {venueName} (if provided). Services include:
+Photographer agrees to provide photography services for Client's \{jobType\}
+on \{sessionDate\} at \{venueName\} (if provided). Services include:
 
-- {sessionDuration} hours of professional photography coverage
+- \{sessionDuration\} hours of professional photography coverage
 - Professional editing and color correction
-- Online gallery delivery within {deliveryWeeks} weeks
-- Minimum of {minimumPhotos} fully edited high-resolution images
+- Online gallery delivery within \{deliveryWeeks\} weeks
+- Minimum of \{minimumPhotos\} fully edited high-resolution images
 ```
 
 **3. Pricing and Payment**
 ```
-Total Price: {totalAmount}
+Total Price: \{totalAmount\}
 
 Payment Schedule:
-- Deposit: {depositAmount} due upon signing this contract
-- Balance: {balanceAmount} due {balanceDueDays} days before the session date
+- Deposit: \{depositAmount\} due upon signing this contract
+- Balance: \{balanceAmount\} due \{balanceDueDays\} days before the session date
 
 Late payments may result in rescheduling or cancellation.
 ```
@@ -164,16 +164,16 @@ Late payments may result in rescheduling or cancellation.
 Client will receive:
 - High-resolution digital files via secure online gallery
 - Personal use license for all delivered images
-- Gallery access for {galleryAccessDays} days from delivery
+- Gallery access for \{galleryAccessDays\} days from delivery
 - Print authorization for personal use
 ```
 
 **5. Timeline**
 ```
-- Session date: {sessionDate}
+- Session date: \{sessionDate\}
 - Sneak peek (if offered): 48 hours after session
-- Full gallery delivery: Within {deliveryWeeks} weeks of session
-- Gallery remains active for {galleryAccessDays} days
+- Full gallery delivery: Within \{deliveryWeeks\} weeks of session
+- Gallery remains active for \{galleryAccessDays\} days
 ```
 
 **6. Cancellation Policy**
@@ -252,14 +252,14 @@ Many photography organizations (PPA, ASMP, local photographer groups) offer cont
 
 #### Step 4: Add Template Variables
 
-As you write your contract, insert template variables wherever content should be auto-filled. Variables use this format: `{variableName}`
+As you write your contract, insert template variables wherever content should be auto-filled. Variables use this format: `\{variableName\}`
 
 **Common variables:**
-- `{clientName}` - Client's full name
-- `{businessName}` - Your business name
-- `{sessionDate}` - Job/session date
-- `{totalAmount}` - Job total price
-- `{jobType}` - Type of photography (wedding, portrait, etc.)
+- `\{clientName\}` - Client's full name
+- `\{businessName\}` - Your business name
+- `\{sessionDate\}` - Job/session date
+- `\{totalAmount\}` - Job total price
+- `\{jobType\}` - Type of photography (wedding, portrait, etc.)
 
 See the full list in [Template Variables](./template-variables).
 
@@ -269,7 +269,7 @@ Instead of writing:
 > "This agreement is between [YOUR BUSINESS NAME] and [CLIENT NAME] for services on [DATE]"
 
 Write:
-> "This agreement is between {businessName} and {clientName} for services on {sessionDate}"
+> "This agreement is between \{businessName\} and \{clientName\} for services on \{sessionDate\}"
 
 When you send the contract to Sarah Johnson for her October 15 wedding:
 > "This agreement is between Crashing Elegance Photo and Sarah Johnson for services on October 15, 2024"
@@ -490,7 +490,7 @@ Different photography genres need different contract terms. Here's what to empha
 - Corporate/organization branding usage
 
 **Sample clause:**
-> "Coverage includes {hours} hours starting at {startTime}. Additional coverage beyond contracted hours is available at ${overtimeRate}/hour, subject to photographer availability and client approval before overtime begins."
+> "Coverage includes \{hours\} hours starting at \{startTime\}. Additional coverage beyond contracted hours is available at $\{overtimeRate\}/hour, subject to photographer availability and client approval before overtime begins."
 
 ### Common Contract Template Mistakes
 
@@ -500,7 +500,7 @@ Different photography genres need different contract terms. Here's what to empha
 > "Photographer will deliver photos in a reasonable timeframe."
 
 **Good:**
-> "Photographer will deliver a minimum of {minimumPhotos} edited images within {deliveryWeeks} weeks of the session date."
+> "Photographer will deliver a minimum of \{minimumPhotos\} edited images within \{deliveryWeeks\} weeks of the session date."
 
 Be specific! "Reasonable" means different things to different people.
 
@@ -538,7 +538,7 @@ Always include model release language giving you permission to use photos for ma
 
 **Mistake 6: Forgetting Template Variables**
 
-If you type "John Smith" instead of `{clientName}`, every contract will say "John Smith"! Use variables for everything that changes per client.
+If you type "John Smith" instead of `\{clientName\}`, every contract will say "John Smith"! Use variables for everything that changes per client.
 
 ### Template Variable Best Practices
 
@@ -561,7 +561,7 @@ Instead of hard-coding:
 > "Client will receive 500 edited photos delivered within 8 weeks"
 
 Use variables:
-> "Client will receive a minimum of {minimumPhotos} edited photos delivered within {deliveryWeeks} weeks"
+> "Client will receive a minimum of \{minimumPhotos\} edited photos delivered within \{deliveryWeeks\} weeks"
 
 Now you can adjust per job! A mini session might be 15 photos in 1 week, while a wedding might be 500 photos in 10 weeks.
 
@@ -611,7 +611,7 @@ Before using a template with real clients, test it!
 
 2. **Generate a contract from the template**
    - Check that all variables populate correctly
-   - Look for any `{variableName}` that didn't get replaced (means that variable doesn't exist or is misspelled)
+   - Look for any `\{variableName\}` that didn't get replaced (means that variable doesn't exist or is misspelled)
 
 3. **Review formatting**
    - Line breaks in right places?

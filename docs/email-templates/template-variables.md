@@ -1073,7 +1073,7 @@ Always test templates to ensure variables populate correctly.
 
 **Mistake 2: Wrong Syntax**
 
-❌ `{client_name}` (single braces)
+❌ `\{client_name\}` (single braces)
 ❌ `{{ client_name }}` (spaces inside)
 ✅ `{{client_name}}` (double braces, no spaces)
 

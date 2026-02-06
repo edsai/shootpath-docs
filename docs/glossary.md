@@ -102,7 +102,7 @@ A legal agreement between you and your client outlining the terms of service, de
 
 A reusable document format containing standard terms and conditions for your photography services. Templates include placeholder variables (like client name, job date, pricing) that ShootPath automatically fills when generating a contract for a specific job. You can create different templates for different job types (wedding, portrait, commercial) or keep one universal template.
 
-**Example:** You create a "Wedding Photography Agreement" template that includes your standard terms. When a wedding client books, ShootPath uses this template and replaces `{CLIENT_NAME}` with "Sarah & Mike Johnson" and `{WEDDING_DATE}` with "June 15, 2026."
+**Example:** You create a "Wedding Photography Agreement" template that includes your standard terms. When a wedding client books, ShootPath uses this template and replaces `\{CLIENT_NAME\}` with "Sarah & Mike Johnson" and `\{WEDDING_DATE\}` with "June 15, 2026."
 
 **Related:** [Contract Templates](/docs/contracts/contract-templates), [Template Variables](/docs/contracts/template-variables)
 
@@ -134,7 +134,7 @@ The date by which a payment must be received. Due dates are set when creating qu
 
 A reusable email message format that can be sent manually or automatically as part of a workflow. Templates include template variables that are automatically replaced with specific client, job, or business details. Common templates include booking confirmations, contract reminders, questionnaire invitations, gallery delivery notifications, and payment reminders.
 
-**Example:** Your "Booking Confirmation" template says: "Hi {CLIENT_NAME}, We're so excited for your {JOB_TYPE} on {SESSION_DATE}!" ShootPath replaces the variables when sending to each specific client.
+**Example:** Your "Booking Confirmation" template says: "Hi \{CLIENT_NAME\}, We're so excited for your \{JOB_TYPE\} on \{SESSION_DATE\}!" ShootPath replaces the variables when sending to each specific client.
 
 **Related:** [Email Templates Overview](/docs/email-templates/), [Workflow Email Automation](/docs/workflows/email-automation)
 
@@ -396,9 +396,9 @@ A user account in your ShootPath account beyond the owner. Team members can be p
 
 ### Template Variable
 
-A placeholder in email templates or contract templates that gets automatically replaced with specific information when the template is used. Template variables are enclosed in curly braces like `{CLIENT_NAME}`, `{SESSION_DATE}`, or `{TOTAL_PRICE}`. Variables make templates reusable across different clients and jobs.
+A placeholder in email templates or contract templates that gets automatically replaced with specific information when the template is used. Template variables are enclosed in curly braces like `\{CLIENT_NAME\}`, `\{SESSION_DATE\}`, or `\{TOTAL_PRICE\}`. Variables make templates reusable across different clients and jobs.
 
-**Example:** Your booking confirmation email template says: "Hi {CLIENT_NAME}, we're confirmed for {SESSION_DATE} at {SESSION_LOCATION}!" When sent to the Johnsons, ShootPath replaces this with: "Hi Emma Johnson, we're confirmed for June 15, 2026 at Riverside Park!"
+**Example:** Your booking confirmation email template says: "Hi \{CLIENT_NAME\}, we're confirmed for \{SESSION_DATE\} at \{SESSION_LOCATION\}!" When sent to the Johnsons, ShootPath replaces this with: "Hi Emma Johnson, we're confirmed for June 15, 2026 at Riverside Park!"
 
 **Related:** [Template Variables](/docs/contracts/template-variables), [Email Templates](/docs/email-templates/)
 

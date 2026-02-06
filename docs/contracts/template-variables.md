@@ -6,26 +6,26 @@ sidebar_position: 3
 
 ## Quick Reference
 
-Template variables are placeholders in your contract templates that automatically populate with job-specific information. Write `{clientName}` once, and it becomes "Sarah Johnson" for every client!
+Template variables are placeholders in your contract templates that automatically populate with job-specific information. Write `\{clientName\}` once, and it becomes "Sarah Johnson" for every client!
 
 **How Variables Work:**
-- Write contract with variables: `{clientName}`
+- Write contract with variables: `\{clientName\}`
 - ShootPath fills in real data: "Sarah Johnson"
 - Every contract is personalized automatically
 - Zero manual editing required
 
 **Variable Syntax:**
-- Use curly braces: `{variableName}`
-- Case-sensitive: `{clientName}` not `{ClientName}`
-- No spaces: `{sessionDate}` not `{session date}`
+- Use curly braces: `\{variableName\}`
+- Case-sensitive: `\{clientName\}` not `\{ClientName\}`
+- No spaces: `\{sessionDate\}` not `{session date}`
 - Optional variables show nothing if data missing
 
 **Common Variables:**
-- `{clientName}` - Client's full name
-- `{sessionDate}` - Job/event date
-- `{totalAmount}` - Total price with currency
-- `{businessName}` - Your business name
-- `{jobType}` - Wedding, portrait, event, etc.
+- `\{clientName\}` - Client's full name
+- `\{sessionDate\}` - Job/event date
+- `\{totalAmount\}` - Total price with currency
+- `\{businessName\}` - Your business name
+- `\{jobType\}` - Wedding, portrait, event, etc.
 
 **Next Steps:** See the complete [variable reference](#complete-variable-reference) below, or learn how to [create contract templates](./contract-templates).
 
@@ -42,7 +42,7 @@ Template variables are smart placeholders that transform generic contract templa
 **Example:**
 
 **Your template says:**
-> "This agreement is made on {signedDate} between {businessName} and {clientName} for {jobType} photography services on {sessionDate} at {venueName}. Total investment: {totalAmount}."
+> "This agreement is made on \{signedDate\} between \{businessName\} and \{clientName\} for \{jobType\} photography services on \{sessionDate\} at \{venueName\}. Total investment: \{totalAmount\}."
 
 **Client sees:**
 > "This agreement is made on January 15, 2024 between Crashing Elegance Photography and Sarah Johnson for Wedding photography services on June 12, 2024 at Willow Creek Barn. Total investment: $4,500."
@@ -81,7 +81,7 @@ Using variables is simple: insert them anywhere in your contract template where 
 
 Variables use this format:
 ```
-{variableName}
+\{variableName\}
 ```
 
 **Rules:**
@@ -94,10 +94,10 @@ Variables use this format:
 
 **Client information:**
 ```
-Dear {clientName},
+Dear \{clientName\},
 
-Thank you for choosing {businessName} for your {jobType} photography!
-We're excited to work with you on {sessionDate}.
+Thank you for choosing \{businessName\} for your \{jobType\} photography!
+We're excited to work with you on \{sessionDate\}.
 ```
 
 **Becomes:**
@@ -110,9 +110,9 @@ We're excited to work with you on June 12, 2024.
 
 **Pricing details:**
 ```
-Total Price: {totalAmount}
-Deposit Due Now: {depositAmount}
-Balance Due: {balanceAmount}
+Total Price: \{totalAmount\}
+Deposit Due Now: \{depositAmount\}
+Balance Due: \{balanceAmount\}
 ```
 
 **Becomes:**
@@ -127,19 +127,19 @@ Balance Due: $3,000
 Variables flow naturally in sentences:
 
 ```
-This agreement is between {businessName} (Photographer) and {clientName}
-(Client) for photography services on {sessionDate} at {venueName}.
+This agreement is between \{businessName\} (Photographer) and \{clientName\}
+(Client) for photography services on \{sessionDate\} at \{venueName\}.
 ```
 
 ```
-Client will receive a minimum of {minimumPhotos} professionally edited
-high-resolution images delivered within {deliveryWeeks} weeks via online
+Client will receive a minimum of \{minimumPhotos\} professionally edited
+high-resolution images delivered within \{deliveryWeeks\} weeks via online
 gallery.
 ```
 
 ```
-Payment schedule: ${depositAmount} due upon signing, ${balanceAmount} due
-{balanceDueDays} days before the session date.
+Payment schedule: $\{depositAmount\} due upon signing, $\{balanceAmount\} due
+\{balanceDueDays\} days before the session date.
 ```
 
 #### Variables in Lists
@@ -148,11 +148,11 @@ Use variables in bullet points or numbered lists:
 
 ```
 Services include:
-- {sessionDuration} hours of photography coverage
+- \{sessionDuration\} hours of photography coverage
 - Professional editing and color correction
-- Minimum {minimumPhotos} high-resolution images
-- Online gallery delivery within {deliveryWeeks} weeks
-- Gallery access for {galleryAccessDays} days
+- Minimum \{minimumPhotos\} high-resolution images
+- Online gallery delivery within \{deliveryWeeks\} weeks
+- Gallery access for \{galleryAccessDays\} days
 ```
 
 ### Complete Variable Reference
@@ -165,15 +165,15 @@ Information about your client.
 
 | Variable | Description | Example Output |
 |----------|-------------|----------------|
-| `{clientName}` | Client's full name | "Sarah Johnson" |
-| `{clientFirstName}` | Client's first name only | "Sarah" |
-| `{clientLastName}` | Client's last name only | "Johnson" |
-| `{clientEmail}` | Client's email address | "sarah@example.com" |
-| `{clientPhone}` | Client's phone number | "(555) 123-4567" |
-| `{clientAddress}` | Client's full address | "123 Main St, Austin, TX 78701" |
-| `{clientCity}` | Client's city | "Austin" |
-| `{clientState}` | Client's state/province | "TX" |
-| `{clientZip}` | Client's ZIP/postal code | "78701" |
+| `\{clientName\}` | Client's full name | "Sarah Johnson" |
+| `\{clientFirstName\}` | Client's first name only | "Sarah" |
+| `\{clientLastName\}` | Client's last name only | "Johnson" |
+| `\{clientEmail\}` | Client's email address | "sarah@example.com" |
+| `\{clientPhone\}` | Client's phone number | "(555) 123-4567" |
+| `\{clientAddress\}` | Client's full address | "123 Main St, Austin, TX 78701" |
+| `\{clientCity\}` | Client's city | "Austin" |
+| `\{clientState\}` | Client's state/province | "TX" |
+| `\{clientZip\}` | Client's ZIP/postal code | "78701" |
 
 **When to use:**
 - Agreement introduction (parties involved)
@@ -183,8 +183,8 @@ Information about your client.
 
 **Example usage:**
 ```
-This agreement is made between {businessName} and {clientName}, residing at
-{clientAddress}. All correspondence will be sent to {clientEmail}.
+This agreement is made between \{businessName\} and \{clientName\}, residing at
+\{clientAddress\}. All correspondence will be sent to \{clientEmail\}.
 ```
 
 #### Business Variables
@@ -193,12 +193,12 @@ Information about your photography business.
 
 | Variable | Description | Example Output |
 |----------|-------------|----------------|
-| `{businessName}` | Your business/studio name | "Crashing Elegance Photography" |
-| `{businessOwner}` | Your name (business owner) | "Emma Thompson" |
-| `{businessEmail}` | Business email address | "hello@crashingelegance.com" |
-| `{businessPhone}` | Business phone number | "(555) 987-6543" |
-| `{businessAddress}` | Business address | "456 Studio Ln, Austin, TX 78702" |
-| `{businessWebsite}` | Business website URL | "www.crashingelegance.com" |
+| `\{businessName\}` | Your business/studio name | "Crashing Elegance Photography" |
+| `\{businessOwner\}` | Your name (business owner) | "Emma Thompson" |
+| `\{businessEmail\}` | Business email address | "hello@crashingelegance.com" |
+| `\{businessPhone\}` | Business phone number | "(555) 987-6543" |
+| `\{businessAddress\}` | Business address | "456 Studio Ln, Austin, TX 78702" |
+| `\{businessWebsite\}` | Business website URL | "www.crashingelegance.com" |
 
 **When to use:**
 - Agreement introduction
@@ -208,9 +208,9 @@ Information about your photography business.
 
 **Example usage:**
 ```
-Services provided by {businessName}, located at {businessAddress}.
-For questions, contact us at {businessEmail} or {businessPhone}.
-Visit our portfolio at {businessWebsite}.
+Services provided by \{businessName\}, located at \{businessAddress\}.
+For questions, contact us at \{businessEmail\} or \{businessPhone\}.
+Visit our portfolio at \{businessWebsite\}.
 ```
 
 #### Job Details Variables
@@ -219,15 +219,15 @@ Information about the specific photography job.
 
 | Variable | Description | Example Output |
 |----------|-------------|----------------|
-| `{jobType}` | Type of photography | "Wedding" |
-| `{jobTitle}` | Job name/title | "Johnson Wedding - June 2024" |
-| `{sessionDate}` | Date of shoot/event | "June 12, 2024" |
-| `{sessionDateShort}` | Shorter date format | "06/12/2024" |
-| `{sessionTime}` | Start time (if specified) | "2:00 PM" |
-| `{sessionDuration}` | Hours of coverage | "8 hours" |
-| `{venueName}` | Location/venue name | "Willow Creek Barn" |
-| `{venueAddress}` | Venue full address | "789 Creek Rd, Dripping Springs, TX" |
-| `{venueCity}` | Venue city | "Dripping Springs" |
+| `\{jobType\}` | Type of photography | "Wedding" |
+| `\{jobTitle\}` | Job name/title | "Johnson Wedding - June 2024" |
+| `\{sessionDate\}` | Date of shoot/event | "June 12, 2024" |
+| `\{sessionDateShort\}` | Shorter date format | "06/12/2024" |
+| `\{sessionTime\}` | Start time (if specified) | "2:00 PM" |
+| `\{sessionDuration\}` | Hours of coverage | "8 hours" |
+| `\{venueName\}` | Location/venue name | "Willow Creek Barn" |
+| `\{venueAddress\}` | Venue full address | "789 Creek Rd, Dripping Springs, TX" |
+| `\{venueCity\}` | Venue city | "Dripping Springs" |
 
 **When to use:**
 - Service description sections
@@ -237,9 +237,9 @@ Information about the specific photography job.
 
 **Example usage:**
 ```
-Photographer will provide {sessionDuration} of {jobType} photography coverage
-on {sessionDate} starting at {sessionTime} at {venueName}, located at
-{venueAddress}.
+Photographer will provide \{sessionDuration\} of \{jobType\} photography coverage
+on \{sessionDate\} starting at \{sessionTime\} at \{venueName\}, located at
+\{venueAddress\}.
 ```
 
 #### Pricing Variables
@@ -248,14 +248,14 @@ Financial details from quotes and invoices.
 
 | Variable | Description | Example Output |
 |----------|-------------|----------------|
-| `{totalAmount}` | Total job price with currency | "$4,500" |
-| `{totalAmountNumber}` | Total as number only | "4500" |
-| `{depositAmount}` | Deposit amount with currency | "$1,500" |
-| `{depositAmountNumber}` | Deposit as number only | "1500" |
-| `{balanceAmount}` | Remaining balance with currency | "$3,000" |
-| `{balanceAmountNumber}` | Balance as number only | "3000" |
-| `{depositPercent}` | Deposit as percentage | "33%" |
-| `{balancePercent}` | Balance as percentage | "67%" |
+| `\{totalAmount\}` | Total job price with currency | "$4,500" |
+| `\{totalAmountNumber\}` | Total as number only | "4500" |
+| `\{depositAmount\}` | Deposit amount with currency | "$1,500" |
+| `\{depositAmountNumber\}` | Deposit as number only | "1500" |
+| `\{balanceAmount\}` | Remaining balance with currency | "$3,000" |
+| `\{balanceAmountNumber\}` | Balance as number only | "3000" |
+| `\{depositPercent\}` | Deposit as percentage | "33%" |
+| `\{balancePercent\}` | Balance as percentage | "67%" |
 
 **When to use:**
 - Payment terms sections
@@ -265,11 +265,11 @@ Financial details from quotes and invoices.
 
 **Example usage:**
 ```
-Total Price: {totalAmount}
+Total Price: \{totalAmount\}
 
 Payment Schedule:
-- Deposit: {depositAmount} ({depositPercent}) due upon signing
-- Balance: {balanceAmount} ({balancePercent}) due 14 days before session
+- Deposit: \{depositAmount\} (\{depositPercent\}) due upon signing
+- Balance: \{balanceAmount\} (\{balancePercent\}) due 14 days before session
 
 Late payment may result in rescheduling.
 ```
@@ -280,10 +280,10 @@ Detailed payment timeline information.
 
 | Variable | Description | Example Output |
 |----------|-------------|----------------|
-| `{depositDueDate}` | When deposit is due | "January 15, 2024" |
-| `{balanceDueDate}` | When balance is due | "May 29, 2024" |
-| `{balanceDueDays}` | Days before event balance due | "14" |
-| `{paymentCount}` | Number of payment installments | "2" |
+| `\{depositDueDate\}` | When deposit is due | "January 15, 2024" |
+| `\{balanceDueDate\}` | When balance is due | "May 29, 2024" |
+| `\{balanceDueDays\}` | Days before event balance due | "14" |
+| `\{paymentCount\}` | Number of payment installments | "2" |
 
 **When to use:**
 - Payment schedule details
@@ -292,9 +292,9 @@ Detailed payment timeline information.
 
 **Example usage:**
 ```
-Payment #1 (Deposit): {depositAmount} due {depositDueDate}
-Payment #2 (Balance): {balanceAmount} due {balanceDueDate}
-({balanceDueDays} days before the event)
+Payment #1 (Deposit): \{depositAmount\} due \{depositDueDate\}
+Payment #2 (Balance): \{balanceAmount\} due \{balanceDueDate\}
+(\{balanceDueDays\} days before the event)
 ```
 
 #### Package and Service Variables
@@ -303,11 +303,11 @@ Details about selected packages and add-ons.
 
 | Variable | Description | Example Output |
 |----------|-------------|----------------|
-| `{packageName}` | Selected package name | "Full Day Coverage" |
-| `{packageDescription}` | Package description | "10 hours, 500+ photos, album" |
-| `{addOnsList}` | List of selected add-ons | "Engagement Session, Second Photographer" |
-| `{minimumPhotos}` | Minimum photos promised | "500" |
-| `{maxPhotos}` | Maximum photos (if specified) | "750" |
+| `\{packageName\}` | Selected package name | "Full Day Coverage" |
+| `\{packageDescription\}` | Package description | "10 hours, 500+ photos, album" |
+| `\{addOnsList\}` | List of selected add-ons | "Engagement Session, Second Photographer" |
+| `\{minimumPhotos\}` | Minimum photos promised | "500" |
+| `\{maxPhotos\}` | Maximum photos (if specified) | "750" |
 
 **When to use:**
 - Service descriptions
@@ -316,12 +316,12 @@ Details about selected packages and add-ons.
 
 **Example usage:**
 ```
-Client has selected the "{packageName}" package, which includes:
-{packageDescription}
+Client has selected the "\{packageName\}" package, which includes:
+\{packageDescription\}
 
-Additional services: {addOnsList}
+Additional services: \{addOnsList\}
 
-Deliverables: Minimum {minimumPhotos} professionally edited high-resolution
+Deliverables: Minimum \{minimumPhotos\} professionally edited high-resolution
 digital images.
 ```
 
@@ -331,10 +331,10 @@ Delivery and scheduling details.
 
 | Variable | Description | Example Output |
 |----------|-------------|----------------|
-| `{deliveryWeeks}` | Weeks until gallery delivery | "8" |
-| `{deliveryDate}` | Estimated delivery date | "August 7, 2024" |
-| `{galleryAccessDays}` | Days gallery stays active | "365" |
-| `{sneakPeekHours}` | Hours until sneak peek (if offered) | "48" |
+| `\{deliveryWeeks\}` | Weeks until gallery delivery | "8" |
+| `\{deliveryDate\}` | Estimated delivery date | "August 7, 2024" |
+| `\{galleryAccessDays\}` | Days gallery stays active | "365" |
+| `\{sneakPeekHours\}` | Hours until sneak peek (if offered) | "48" |
 
 **When to use:**
 - Delivery timeline sections
@@ -344,10 +344,10 @@ Delivery and scheduling details.
 **Example usage:**
 ```
 Timeline:
-- Sneak peek: {sneakPeekHours} hours after session
-- Full gallery: {deliveryWeeks} weeks from session date
-- Estimated delivery: {deliveryDate}
-- Gallery access: {galleryAccessDays} days from delivery
+- Sneak peek: \{sneakPeekHours\} hours after session
+- Full gallery: \{deliveryWeeks\} weeks from session date
+- Estimated delivery: \{deliveryDate\}
+- Gallery access: \{galleryAccessDays\} days from delivery
 ```
 
 #### Date Variables
@@ -356,10 +356,10 @@ Important dates throughout the contract lifecycle.
 
 | Variable | Description | Example Output |
 |----------|-------------|----------------|
-| `{contractCreatedDate}` | When contract was generated | "January 15, 2024" |
-| `{signedDate}` | When client signed contract | "January 16, 2024" |
-| `{todayDate}` | Current date | "January 20, 2024" |
-| `{currentYear}` | Current year | "2024" |
+| `\{contractCreatedDate\}` | When contract was generated | "January 15, 2024" |
+| `\{signedDate\}` | When client signed contract | "January 16, 2024" |
+| `\{todayDate\}` | Current date | "January 20, 2024" |
+| `\{currentYear\}` | Current year | "2024" |
 
 **When to use:**
 - Agreement date references
@@ -368,10 +368,10 @@ Important dates throughout the contract lifecycle.
 
 **Example usage:**
 ```
-This agreement is made on {signedDate} between {businessName} and
-{clientName} for services to be performed on {sessionDate}.
+This agreement is made on \{signedDate\} between \{businessName\} and
+\{clientName\} for services to be performed on \{sessionDate\}.
 
-© {currentYear} {businessName}. All rights reserved.
+© \{currentYear\} {businessName}. All rights reserved.
 ```
 
 ### Optional Variables
@@ -382,7 +382,7 @@ Some variables might not have data for every job. When a variable is empty, Shoo
 
 **Your template:**
 ```
-Services will be provided at {venueName} in {venueCity}.
+Services will be provided at \{venueName\} in \{venueCity\}.
 ```
 
 **If venue is filled in:**
@@ -401,20 +401,20 @@ Notice the awkward empty spaces! To avoid this, use conditional text or phrase v
 
 **Instead of:**
 ```
-Services on {sessionDate} at {venueName} in {venueCity}.
+Services on \{sessionDate\} at \{venueName\} in \{venueCity\}.
 ```
 
 **Use:**
 ```
-Services on {sessionDate} {venueName}.
+Services on \{sessionDate\} {venueName}.
 ```
 (Only include location if you know it's always filled in, or use conditional sections - see below)
 
 **For addresses:**
 ```
-{clientName}
-{clientAddress}
-{clientCity}, {clientState} {clientZip}
+\{clientName\}
+\{clientAddress\}
+\{clientCity\}, \{clientState\} \{clientZip\}
 ```
 
 If any field is empty, you'll get blank lines. That's usually fine for addresses since the format is expected!
@@ -451,10 +451,10 @@ If you need custom data in contracts:
 3. Use job titles/descriptions to add context
 
 **Requested custom variables (coming soon):**
-- `{photographerName}` (for multi-photographer studios)
-- `{assistantName}` (if second shooter has a name)
-- `{albumDeliveryWeeks}` (custom timeline for physical products)
-- `{editingStyle}` (light & airy, dark & moody, etc.)
+- `\{photographerName\}` (for multi-photographer studios)
+- `\{assistantName\}` (if second shooter has a name)
+- `\{albumDeliveryWeeks\}` (custom timeline for physical products)
+- `\{editingStyle\}` (light & airy, dark & moody, etc.)
 - `{customField1}` through `{customField5}` (your own fields!)
 
 ### Variable Best Practices
@@ -469,53 +469,53 @@ for services on [DATE].
 
 **Use variables:**
 ```
-This agreement is between {businessName} and {clientName} for services
-on {sessionDate}.
+This agreement is between \{businessName\} and \{clientName\} for services
+on \{sessionDate\}.
 ```
 
 #### 2. Test Variables Before Going Live
 
 Create a test job and generate a contract to verify:
 - All variables populate correctly
-- No `{variableName}` shows in output (means typo or invalid variable)
+- No `\{variableName\}` shows in output (means typo or invalid variable)
 - Formatting looks good with real data
 - Spacing around variables is correct
 
 #### 3. Use Descriptive Variable Names
 
 ShootPath's variables are self-explanatory:
-- `{clientName}` is obvious
-- `{sessionDate}` is clear
-- `{depositAmount}` tells you what it is
+- `\{clientName\}` is obvious
+- `\{sessionDate\}` is clear
+- `\{depositAmount\}` tells you what it is
 
 When custom variables arrive, name yours clearly too:
 - `{customField1}` - Bad (what is it?)
-- `{secondShooterName}` - Good (obvious!)
+- `\{secondShooterName\}` - Good (obvious!)
 
 #### 4. Format Variables in Context
 
-Some variables include formatting (like `{totalAmount}` includes "$"), others don't.
+Some variables include formatting (like `\{totalAmount\}` includes "$"), others don't.
 
 **Variables with built-in formatting:**
-- `{totalAmount}` = "$4,500" (includes $ symbol)
-- `{depositAmount}` = "$1,500"
-- `{sessionDate}` = "June 12, 2024" (formatted date)
+- `\{totalAmount\}` = "$4,500" (includes $ symbol)
+- `\{depositAmount\}` = "$1,500"
+- `\{sessionDate\}` = "June 12, 2024" (formatted date)
 
 **Variables without formatting:**
-- `{totalAmountNumber}` = "4500" (just the number)
-- `{clientName}` = "Sarah Johnson" (just the name)
+- `\{totalAmountNumber\}` = "4500" (just the number)
+- `\{clientName\}` = "Sarah Johnson" (just the name)
 
 **Don't double-format:**
 
 **Wrong:**
 ```
-Total: ${totalAmount}
+Total: $\{totalAmount\}
 ```
 **Output:** "Total: $$4,500" (double dollar sign!)
 
 **Right:**
 ```
-Total: {totalAmount}
+Total: \{totalAmount\}
 ```
 **Output:** "Total: $4,500"
 
@@ -525,14 +525,14 @@ If a variable might be empty, structure sentences so they still make sense:
 
 **Bad:**
 ```
-Services at {venueName} in {venueCity}
+Services at \{venueName\} in \{venueCity\}
 ```
 (If empty: "Services at  in " - awkward!)
 
 **Better:**
 ```
-Services on {sessionDate}
-Location: {venueName}
+Services on \{sessionDate\}
+Location: \{venueName\}
 ```
 (If empty: Just shows session date, location line can be removed manually if needed)
 
@@ -542,12 +542,12 @@ Location: {venueName}
 
 **Wrong:**
 ```
-{clienName}  (missing 't')
-{sesionDate}  (missing 's')
-{totlAmount}  (missing 'a')
+\{clienName\}  (missing 't')
+\{sesionDate\}  (missing 's')
+\{totlAmount\}  (missing 'a')
 ```
 
-**Result:** The variable won't be replaced - it'll show as `{clienName}` in the final contract!
+**Result:** The variable won't be replaced - it'll show as `\{clienName\}` in the final contract!
 
 **Prevention:** Copy variable names from this reference guide, or use autocomplete (coming soon!).
 
@@ -557,16 +557,16 @@ Location: {venueName}
 
 **Wrong:**
 ```
-{ClientName}  (capital C)
-{SESSIONDATE}  (all caps)
-{clientname}  (lowercase n)
+\{ClientName\}  (capital C)
+\{SESSIONDATE\}  (all caps)
+\{clientname\}  (lowercase n)
 ```
 
 **Right:**
 ```
-{clientName}
-{sessionDate}
-{clientName}
+\{clientName\}
+\{sessionDate\}
+\{clientName\}
 ```
 
 Variables are case-sensitive! Use exact names from the reference table.
@@ -584,9 +584,9 @@ Variables are case-sensitive! Use exact names from the reference table.
 
 **Right:**
 ```
-{clientName}
-{sessionDate}
-{totalAmount}
+\{clientName\}
+\{sessionDate\}
+\{totalAmount\}
 ```
 
 No spaces inside variable names!
@@ -597,17 +597,17 @@ No spaces inside variable names!
 
 **Wrong:**
 ```
-Total: {totalAmountNumber}
+Total: \{totalAmountNumber\}
 ```
 **Output:** "Total: 4500" (no dollar sign, no commas)
 
 **Right:**
 ```
-Total: {totalAmount}
+Total: \{totalAmount\}
 ```
 **Output:** "Total: $4,500"
 
-Use formatted variables (`{totalAmount}`) instead of number-only versions (`{totalAmountNumber}`) in most cases.
+Use formatted variables (`\{totalAmount\}`) instead of number-only versions (`\{totalAmountNumber\}`) in most cases.
 
 ---
 
@@ -628,19 +628,19 @@ Here are real-world examples of how to use variables in different contract secti
 ```
 PHOTOGRAPHY SERVICES AGREEMENT
 
-This agreement ("Agreement") is made on {signedDate} between:
+This agreement ("Agreement") is made on \{signedDate\} between:
 
-PHOTOGRAPHER: {businessName}
-Address: {businessAddress}
-Email: {businessEmail}
-Phone: {businessPhone}
+PHOTOGRAPHER: \{businessName\}
+Address: \{businessAddress\}
+Email: \{businessEmail\}
+Phone: \{businessPhone\}
 
-CLIENT: {clientName}
-Address: {clientAddress}
-Email: {clientEmail}
-Phone: {clientPhone}
+CLIENT: \{clientName\}
+Address: \{clientAddress\}
+Email: \{clientEmail\}
+Phone: \{clientPhone\}
 
-For {jobType} photography services on {sessionDate}.
+For \{jobType\} photography services on \{sessionDate\}.
 ```
 
 #### Services Description
@@ -648,12 +648,12 @@ For {jobType} photography services on {sessionDate}.
 ```
 SERVICES PROVIDED
 
-Photographer agrees to provide {jobType} photography services for Client's
-event on {sessionDate} at {venueName}, located at {venueAddress}.
+Photographer agrees to provide \{jobType\} photography services for Client's
+event on \{sessionDate\} at \{venueName\}, located at \{venueAddress\}.
 
-Package: {packageName}
-Coverage: {sessionDuration}
-Additional services: {addOnsList}
+Package: \{packageName\}
+Coverage: \{sessionDuration\}
+Additional services: \{addOnsList\}
 
 Services include:
 - Professional photography during scheduled time
@@ -669,15 +669,15 @@ DELIVERABLES
 
 Client will receive:
 
-1. Digital Images: Minimum {minimumPhotos} professionally edited high-resolution
+1. Digital Images: Minimum \{minimumPhotos\} professionally edited high-resolution
    images in JPEG format
 
 2. Delivery Method: Private online gallery accessible via link
 
-3. Delivery Timeline: Within {deliveryWeeks} weeks of {sessionDate}
-   (estimated delivery: {deliveryDate})
+3. Delivery Timeline: Within \{deliveryWeeks\} weeks of \{sessionDate\}
+   (estimated delivery: \{deliveryDate\})
 
-4. Gallery Access: Gallery remains active for {galleryAccessDays} days from
+4. Gallery Access: Gallery remains active for \{galleryAccessDays\} days from
    delivery date
 
 5. Usage Rights: Unlimited personal use license (see Copyright section)
@@ -688,16 +688,16 @@ Client will receive:
 ```
 PRICING AND PAYMENT TERMS
 
-Total Price: {totalAmount}
+Total Price: \{totalAmount\}
 
 Payment Schedule:
-1. Deposit: {depositAmount} ({depositPercent} of total)
-   Due: {depositDueDate} (upon signing this contract)
+1. Deposit: \{depositAmount\} (\{depositPercent\} of total)
+   Due: \{depositDueDate\} (upon signing this contract)
 
-2. Balance: {balanceAmount} ({balancePercent} of total)
-   Due: {balanceDueDate} ({balanceDueDays} days before session)
+2. Balance: \{balanceAmount\} (\{balancePercent\} of total)
+   Due: \{balanceDueDate\} (\{balanceDueDays\} days before session)
 
-Payment Methods: Credit card, bank transfer, or check payable to {businessName}
+Payment Methods: Credit card, bank transfer, or check payable to \{businessName\}
 
 Late Payment: Payments not received by due date may result in rescheduling or
 cancellation of services.
@@ -708,12 +708,12 @@ cancellation of services.
 ```
 PROJECT TIMELINE
 
-Booking: {contractCreatedDate}
-Contract Signed: {signedDate}
-Session Date: {sessionDate}
-Sneak Peek: {sneakPeekHours} hours after session
-Full Gallery Delivery: {deliveryWeeks} weeks after session (by {deliveryDate})
-Gallery Access Expires: {galleryAccessDays} days after delivery
+Booking: \{contractCreatedDate\}
+Contract Signed: \{signedDate\}
+Session Date: \{sessionDate\}
+Sneak Peek: \{sneakPeekHours\} hours after session
+Full Gallery Delivery: \{deliveryWeeks\} weeks after session (by \{deliveryDate\})
+Gallery Access Expires: \{galleryAccessDays\} days after delivery
 ```
 
 #### Copyright and Usage
@@ -721,18 +721,18 @@ Gallery Access Expires: {galleryAccessDays} days after delivery
 ```
 COPYRIGHT AND USAGE RIGHTS
 
-Photographer: {businessName} retains full copyright ownership of all images
+Photographer: \{businessName\} retains full copyright ownership of all images
 created during this session.
 
-Client: {clientName} receives an unlimited personal use license including:
+Client: \{clientName\} receives an unlimited personal use license including:
 - Posting to social media (Facebook, Instagram, personal websites)
 - Printing for personal use
 - Sharing with family and friends
 
 Client may NOT use images for commercial purposes without written permission
-from {businessName}.
+from \{businessName\}.
 
-Model Release: Client grants {businessName} permission to use images for
+Model Release: Client grants \{businessName\} permission to use images for
 portfolio, website, social media, blog, and marketing materials.
 ```
 
@@ -744,22 +744,22 @@ SIGNATURES
 By signing below, both parties agree to all terms and conditions outlined
 in this agreement.
 
-CLIENT: {clientName}
+CLIENT: \{clientName\}
 Signature: _____________________ Date: __________
 
-PHOTOGRAPHER: {businessName}
+PHOTOGRAPHER: \{businessName\}
 Signature: _____________________ Date: __________
 ```
 
 ### Troubleshooting Variables
 
-**Problem: Variable shows as `{variableName}` in contract**
+**Problem: Variable shows as `\{variableName\}` in contract**
 
 **Cause:** Variable name is misspelled or doesn't exist
 
 **Fix:**
 - Check spelling against reference table
-- Verify case sensitivity (`{clientName}` not `{ClientName}`)
+- Verify case sensitivity (`\{clientName\}` not `\{ClientName\}`)
 - Make sure no spaces inside braces
 
 ---
@@ -780,26 +780,26 @@ Signature: _____________________ Date: __________
 **Cause:** ShootPath uses default date formatting
 
 **Fix:** Use the date variable that fits your needs:
-- `{sessionDate}` = "June 12, 2024" (long format)
-- `{sessionDateShort}` = "06/12/2024" (short format)
+- `\{sessionDate\}` = "June 12, 2024" (long format)
+- `\{sessionDateShort\}` = "06/12/2024" (short format)
 
 ---
 
 **Problem: Currency symbol appears twice**
 
-**Cause:** You typed `${totalAmount}` and `{totalAmount}` already includes "$"
+**Cause:** You typed `$\{totalAmount\}` and `\{totalAmount\}` already includes "$"
 
-**Fix:** Use `{totalAmount}` alone, not `${totalAmount}`
+**Fix:** Use `\{totalAmount\}` alone, not `$\{totalAmount\}`
 
 ---
 
 **Problem: Numbers have no formatting**
 
-**Cause:** Using number-only variables like `{totalAmountNumber}`
+**Cause:** Using number-only variables like `\{totalAmountNumber\}`
 
 **Fix:** Use formatted versions:
-- `{totalAmount}` instead of `{totalAmountNumber}`
-- `{sessionDate}` instead of date number values
+- `\{totalAmount\}` instead of `\{totalAmountNumber\}`
+- `\{sessionDate\}` instead of date number values
 
 ### What's Next?
 
@@ -819,12 +819,12 @@ Now that you understand template variables, you're ready to:
 
 **Most Common Variables:**
 ```
-{clientName}          {businessName}         {sessionDate}
-{clientEmail}         {businessEmail}        {sessionTime}
-{clientPhone}         {businessPhone}        {venueName}
-{totalAmount}         {sessionDuration}      {deliveryWeeks}
-{depositAmount}       {jobType}              {minimumPhotos}
-{balanceAmount}       {packageName}          {signedDate}
+\{clientName\}          \{businessName\}         \{sessionDate\}
+\{clientEmail\}         \{businessEmail\}        \{sessionTime\}
+\{clientPhone\}         \{businessPhone\}        \{venueName\}
+\{totalAmount\}         \{sessionDuration\}      \{deliveryWeeks\}
+\{depositAmount\}       \{jobType\}              \{minimumPhotos\}
+\{balanceAmount\}       \{packageName\}          \{signedDate\}
 ```
 
 ---
