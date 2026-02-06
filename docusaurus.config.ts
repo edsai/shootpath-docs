@@ -70,7 +70,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'ShootPath',
+      title: '',
       logo: {
         alt: 'ShootPath Logo',
         src: 'img/logo-dark.png',
