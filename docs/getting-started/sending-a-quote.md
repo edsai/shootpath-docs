@@ -1,5 +1,9 @@
 # Sending Your First Quote
 
+:::warning Prerequisites
+Before sending your first quote, make sure you've set up your [Packages, Add-ons, and Payment Schedules](./setting-up-your-business#packages--add-ons). Without these, you won't be able to create a quote!
+:::
+
 ## Quick Reference
 
 A quote is your professional pricing proposal that turns inquiries into bookings. After creating a lead, sending a quote is your next step!

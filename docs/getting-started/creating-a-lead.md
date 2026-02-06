@@ -1,5 +1,9 @@
 # Creating Your First Lead
 
+:::warning Prerequisites
+Before creating your first lead, make sure you've completed [Setting Up Your Business](./setting-up-your-business) - especially configuring your **Job Types**. This only takes 15-20 minutes and prevents blockers later!
+:::
+
 ## Quick Reference
 
 A lead is a potential client who's interested in your photography services. Every client relationship in ShootPath starts here!

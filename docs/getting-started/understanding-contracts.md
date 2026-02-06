@@ -214,6 +214,10 @@ This protects both you and your client. COVID taught us the hard way that this c
 
 ### Contract Templates in ShootPath
 
+:::tip Customize Your Contract First
+Before your first booking, customize your contract template in [Setting Up Your Business](./setting-up-your-business#contract-templates). Include your specific terms, cancellation policy, and usage rights.
+:::
+
 ShootPath lets you create and customize contract templates for different job types. Here's how it works:
 
 **Creating Your First Template**
