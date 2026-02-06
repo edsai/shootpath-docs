@@ -1,7 +1,7 @@
 # Sending Your First Quote
 
 :::warning Prerequisites
-Before sending your first quote, make sure you've set up your [Packages, Add-ons, and Payment Schedules](./setting-up-your-business#packages--add-ons). Without these, you won't be able to create a quote!
+Before sending your first quote, make sure you've set up your [Packages, Add-ons, and Payment Schedules](./setting-up-your-business#3-packages--add-ons). Without these, you won't be able to create a quote!
 :::
 
 ## Quick Reference
@@ -17,7 +17,8 @@ A quote is your professional pricing proposal that turns inquiries into bookings
 5. Preview how it looks to your client
 6. Click **"Send Quote"**
 
-![Quote creation form](../../static/img/screenshots/getting-started/quote-creation.png)
+<!-- TODO: Add screenshot -->
+<!-- ![Quote creation form](../../static/img/screenshots/getting-started/quote-creation.png)amp; -->
 
 **What Happens Next:**
 - Client receives an email with a link to view the quote
@@ -87,7 +88,8 @@ This opens the quote creation form where you'll build your pricing proposal.
 
 #### Step 3: Select Packages
 
-![Package selection](../../static/img/screenshots/getting-started/package-selection.png)
+<!-- TODO: Add screenshot -->
+<!-- ![Package selection](../../static/img/screenshots/getting-started/package-selection.png)amp; -->
 
 Your packages are your core service offerings. Think of them as tiers:
 
@@ -127,7 +129,8 @@ Price your base package competitively, but use add-ons to increase average booki
 
 #### Step 5: Configure Payment Schedule
 
-![Payment schedule](../../static/img/screenshots/getting-started/payment-schedule.png)
+<!-- TODO: Add screenshot -->
+<!-- ![Payment schedule](../../static/img/screenshots/getting-started/payment-schedule.png)amp; -->
 
 How do you want to split up the payments? Common options:
 
@@ -219,7 +222,8 @@ The quote is now with your client! 🎉
 
 ### What Clients See
 
-![Client quote view](../../static/img/screenshots/getting-started/client-quote-view.png)
+<!-- TODO: Add screenshot -->
+<!-- ![Client quote view](../../static/img/screenshots/getting-started/client-quote-view.png)amp; -->
 
 When your client clicks the link in their email, they land on a beautiful, branded quote page showing:
 

@@ -117,7 +117,8 @@ A gallery is where you upload, organize, and share photos for a specific job. Ea
 
 Your gallery is now ready for photo uploads!
 
-![Gallery creation](../../static/img/screenshots/getting-started/gallery-create.png)
+<!-- TODO: Add screenshot -->
+<!-- ![Gallery creation](../../static/img/screenshots/getting-started/gallery-create.png)amp; -->
 
 #### Uploading Photos
 

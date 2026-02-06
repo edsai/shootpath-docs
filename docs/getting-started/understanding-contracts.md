@@ -215,7 +215,7 @@ This protects both you and your client. COVID taught us the hard way that this c
 ### Contract Templates in ShootPath
 
 :::tip Customize Your Contract First
-Before your first booking, customize your contract template in [Setting Up Your Business](./setting-up-your-business#contract-templates). Include your specific terms, cancellation policy, and usage rights.
+Before your first booking, customize your contract template in [Setting Up Your Business](./setting-up-your-business#5-contract-templates). Include your specific terms, cancellation policy, and usage rights.
 :::
 
 ShootPath lets you create and customize contract templates for different job types. Here's how it works:
@@ -228,16 +228,16 @@ ShootPath lets you create and customize contract templates for different job typ
 
 **Variables (Smart Placeholders)**
 Use these placeholders - ShootPath fills them in automatically:
-- `{client_name}` - Sarah Johnson
-- `{session_date}` - March 15, 2026
-- `{session_location}` - Golden Gate Park, San Francisco
-- `{total_price}` - $2,500
+- `\{client_name\}` - Sarah Johnson
+- `\{session_date\}` - March 15, 2026
+- `\{session_location\}` - Golden Gate Park, San Francisco
+- `\{total_price\}` - $2,500
 - `{deposit_amount}` - $1,250
 - `{balance_amount}` - $1,250
-- `{today_date}` - February 6, 2026
+- `\{today_date\}` - February 6, 2026
 
 **Example:**
-"This agreement is made on {today_date} between [Your Business Name] and {client_name} for photography services on {session_date} at {session_location} for a total of {total_price}."
+"This agreement is made on \{today_date\} between [Your Business Name] and \{client_name\} for photography services on \{session_date\} at \{session_location\} for a total of \{total_price\}."
 
 Becomes:
 "This agreement is made on February 6, 2026 between Sarah's Photography and Emily Chen for photography services on April 20, 2026 at Presidio Golf Course, San Francisco for a total of $3,500."
