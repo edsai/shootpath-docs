@@ -516,8 +516,8 @@ Email appears with weird formatting, missing line breaks, etc.
 
 **Solution:**
 1. Edit template
-2. Click **<> Source** button to view HTML
-3. Look for unclosed tags (<div> without </div>)
+2. Click the **Source** button to view HTML
+3. Look for unclosed tags (div tags without closing tags)
 4. Simplify formatting (remove complex HTML)
 5. Save and test
 
