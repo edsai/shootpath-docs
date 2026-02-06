@@ -275,7 +275,7 @@ Sometimes clients need to reschedule. Here's how to handle it:
 - If "Send Reminder 1 Week Before" was set, it will now trigger based on new date
 
 :::warning Reschedule Policy
-Have a clear reschedule policy in your contract! Common policies: free reschedule with 2+ weeks notice, $100 fee with less notice, forfeit deposit with <7 days notice.
+Have a clear reschedule policy in your contract! Common policies: free reschedule with 2+ weeks notice, $100 fee with less notice, forfeit deposit with less than 7 days notice.
 :::
 
 #### Cancellations vs. Reschedules

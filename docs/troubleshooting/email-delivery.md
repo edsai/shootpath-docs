@@ -558,7 +558,7 @@ Yes! You can use:
 - Google Workspace: 2,000 emails/day
 - SMTP providers: Varies (SendGrid, Mailgun have higher limits)
 
-Most photographers send <50 emails/day, so Gmail free is usually enough.
+Most photographers send fewer than 50 emails/day, so Gmail free is usually enough.
 
 **Do clients see my email address?**
 Yes, emails come FROM your email address (the one you connected in Settings → Integrations). Replies from clients come back to your email inbox.
