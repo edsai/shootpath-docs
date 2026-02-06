@@ -73,8 +73,8 @@ const config: Config = {
       title: 'ShootPath',
       logo: {
         alt: 'ShootPath Logo',
-        src: 'img/logo-light.png',
-        srcDark: 'img/logo-dark.png',
+        src: 'img/logo-dark.png',
+        srcDark: 'img/logo-light.png',
       },
       items: [
         {
