@@ -47,19 +47,19 @@ Email templates are pre-written messages with placeholders that automatically fi
 **Simple example:**
 
 **Your template:**
-```
-Hi {{client_name}},
+```text
+Hi \{\{client_name\}\},
 
-Thanks for your inquiry about {{job_type}} photography! I'd love to work with you.
+Thanks for your inquiry about \{\{job_type\}\} photography! I'd love to work with you.
 
-I've prepared a custom quote: {{quote_link}}
+I've prepared a custom quote: \{\{quote_link\}\}
 
 Looking forward to hearing from you!
-{{your_name}}
+\{\{your_name\}\}
 ```
 
 **What the client receives:**
-```
+```text
 Hi Sarah,
 
 Thanks for your inquiry about Wedding photography! I'd love to work with you.
@@ -70,7 +70,7 @@ Looking forward to hearing from you!
 Emma
 ```
 
-Every time you send this template, ShootPath automatically replaces `{{client_name}}`, `{{job_type}}`, `{{quote_link}}`, and `{{your_name}}` with the actual details for that specific client and job.
+Every time you send this template, ShootPath automatically replaces `\{\{client_name\}\}`, `\{\{job_type\}\}`, `\{\{quote_link\}\}`, and `\{\{your_name\}\}` with the actual details for that specific client and job.
 
 ### Why Templates Matter
 
@@ -290,14 +290,14 @@ The email subject line clients see in their inbox. Make it:
 - **Specific** - Include relevant details like dates or session types
 
 **Examples:**
-- "Your {{job_type}} Quote from {{your_business}}"
-- "{{client_name}}, Your Gallery is Ready!"
-- "Reminder: {{job_type}} Session on {{session_date}}"
+- "Your \{\{job_type\}\} Quote from \{\{your_business\}\}"
+- "\{\{client_name\}\}, Your Gallery is Ready!"
+- "Reminder: \{\{job_type\}\} Session on \{\{session_date\}\}"
 
 #### Email Body
 
 The main content of your message. This includes:
-- Greeting (often personalized with `{{client_name}}`)
+- Greeting (often personalized with `\{\{client_name\}\}`)
 - Main message explaining the purpose
 - Any necessary details or instructions
 - Call to action (what they should do next)
@@ -307,9 +307,9 @@ The main content of your message. This includes:
 #### Variables/Merge Fields
 
 Placeholders that automatically populate with real data:
-- `{{client_name}}` → "Sarah"
-- `{{session_date}}` → "October 15, 2024"
-- `{{quote_link}}` → actual URL to their quote
+- `\{\{client_name\}\}` → "Sarah"
+- `\{\{session_date\}\}` → "October 15, 2024"
+- `\{\{quote_link\}\}` → actual URL to their quote
 
 [Complete variable reference →](./template-variables)
 
@@ -326,16 +326,16 @@ Go to Settings > Email Templates > New Template
 Internal name: "Quote Sent - General"
 
 **Step 3: Write the Subject**
-Subject: "Your {{job_type}} Photography Quote"
+Subject: "Your \{\{job_type\}\} Photography Quote"
 
 **Step 4: Write the Body**
-```
-Hi {{client_name}},
+```text
+Hi \{\{client_name\}\},
 
-Thanks so much for reaching out about {{job_type}} photography! I'm excited about the possibility of working with you.
+Thanks so much for reaching out about \{\{job_type\}\} photography! I'm excited about the possibility of working with you.
 
 I've put together a custom quote based on what you're looking for:
-{{quote_link}}
+\{\{quote_link\}\}
 
 The quote includes:
 - Package options to choose from
@@ -348,10 +348,10 @@ Feel free to review the quote at your convenience. If you have any questions abo
 Looking forward to hearing from you.
 
 Best,
-{{your_name}}
-{{your_business}}
-{{your_phone}}
-{{your_website}}
+\{\{your_name\}\}
+\{\{your_business\}\}
+\{\{your_phone\}\}
+\{\{your_website\}\}
 ```
 
 **Step 5: Test It**
@@ -418,38 +418,38 @@ Every few months:
 Variables are the magic that makes templates powerful. They're placeholders that get replaced with actual data when you send the email.
 
 **Basic syntax:**
-Variables use double curly braces: `{{variable_name}}`
+Variables use double curly braces: `\{\{variable_name\}\}`
 
 **Common categories:**
 
 **Client information:**
-- `{{client_name}}` - Client's first name or full name
-- `{{client_email}}` - Client's email address
-- `{{client_phone}}` - Client's phone number
+- `\{\{client_name\}\}` - Client's first name or full name
+- `\{\{client_email\}\}` - Client's email address
+- `\{\{client_phone\}\}` - Client's phone number
 
 **Job details:**
-- `{{job_type}}` - Wedding, Portrait, Event, etc.
-- `{{session_date}}` - When the shoot is scheduled
-- `{{session_location}}` - Where you're shooting
+- `\{\{job_type\}\}` - Wedding, Portrait, Event, etc.
+- `\{\{session_date\}\}` - When the shoot is scheduled
+- `\{\{session_location\}\}` - Where you're shooting
 
 **Business information:**
-- `{{your_name}}` - Your name
-- `{{your_business}}` - Your business name
-- `{{your_phone}}` - Your phone number
-- `{{your_email}}` - Your business email
-- `{{your_website}}` - Your website URL
+- `\{\{your_name\}\}` - Your name
+- `\{\{your_business\}\}` - Your business name
+- `\{\{your_phone\}\}` - Your phone number
+- `\{\{your_email\}\}` - Your business email
+- `\{\{your_website\}\}` - Your website URL
 
 **Links and URLs:**
-- `{{quote_link}}` - Link to online quote
-- `{{contract_link}}` - Link to sign contract
-- `{{invoice_link}}` - Link to pay invoice
-- `{{gallery_link}}` - Link to view gallery
-- `{{questionnaire_link}}` - Link to fill out questionnaire
+- `\{\{quote_link\}\}` - Link to online quote
+- `\{\{contract_link\}\}` - Link to sign contract
+- `\{\{invoice_link\}\}` - Link to pay invoice
+- `\{\{gallery_link\}\}` - Link to view gallery
+- `\{\{questionnaire_link\}\}` - Link to fill out questionnaire
 
 **Pricing information:**
-- `{{quote_total}}` - Total quote amount ($2,500)
-- `{{deposit_amount}}` - Deposit due ($1,250)
-- `{{balance_amount}}` - Remaining balance ($1,250)
+- `\{\{quote_total\}\}` - Total quote amount ($2,500)
+- `\{\{deposit_amount\}\}` - Deposit due ($1,250)
+- `\{\{balance_amount\}\}` - Remaining balance ($1,250)
 
 [Complete variable reference with examples →](./template-variables)
 
@@ -499,7 +499,7 @@ Always tell clients what to do next!
 
 **Mistake 3: Using Variables That Don't Exist**
 
-Not all variables work in all contexts. For example, you can't use `{{gallery_link}}` in a quote email because there's no gallery yet!
+Not all variables work in all contexts. For example, you can't use `\{\{gallery_link\}\}` in a quote email because there's no gallery yet!
 
 **Mistake 4: No Personality**
 
@@ -637,11 +637,11 @@ Show different content based on conditions:
 "If deposit is paid, show this text. If deposit is not paid, show reminder instead."
 
 Example:
-```
+```text
 {{#if deposit_paid}}
 Thanks for paying your deposit! We're all set.
-{{else}}
-Reminder: Your deposit of {{deposit_amount}} is due.
+\{\{else\}\}
+Reminder: Your deposit of \{\{deposit_amount\}\} is due.
 {{/if}}
 ```
 

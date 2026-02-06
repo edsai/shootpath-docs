@@ -6,20 +6,20 @@ sidebar_position: 3
 
 ## Quick Reference
 
-Template variables are placeholders that automatically populate with real data when you send an email. They use double curly braces: `{{variable_name}}`
+Template variables are placeholders that automatically populate with real data when you send an email. They use double curly braces: `\{\{variable_name\}\}`
 
 **Most Common Variables:**
-- `{{client_name}}` - Client's name
-- `{{job_type}}` - Wedding, Portrait, Event, etc.
-- `{{session_date}}` - Date of shoot
-- `{{quote_link}}` - Link to view quote
-- `{{gallery_link}}` - Link to view gallery
-- `{{your_name}}` - Your name
-- `{{your_business}}` - Your business name
+- `\{\{client_name\}\}` - Client's name
+- `\{\{job_type\}\}` - Wedding, Portrait, Event, etc.
+- `\{\{session_date\}\}` - Date of shoot
+- `\{\{quote_link\}\}` - Link to view quote
+- `\{\{gallery_link\}\}` - Link to view gallery
+- `\{\{your_name\}\}` - Your name
+- `\{\{your_business\}\}` - Your business name
 
 **Quick Tips:**
-- Variables are case-sensitive: `{{client_name}}` ≠ `{{Client_Name}}`
-- Not all variables work in all contexts (you can't use `{{gallery_link}}` before creating a gallery!)
+- Variables are case-sensitive: `\{\{client_name\}\}` ≠ `\{\{Client_Name\}\}`
+- Not all variables work in all contexts (you can't use `\{\{gallery_link\}\}` before creating a gallery!)
 - Test templates to ensure variables populate correctly
 - Use the variable picker in the template editor to avoid typos
 
@@ -40,16 +40,16 @@ Template variables are placeholders that automatically populate with real data w
 Variables are dynamic placeholders that get replaced with actual data when an email is sent.
 
 **What you write in your template:**
-```
-Hi {{client_name}},
+```text
+Hi \{\{client_name\}\},
 
-Your {{job_type}} session on {{session_date}} is confirmed!
+Your \{\{job_type\}\} session on \{\{session_date\}\} is confirmed!
 
-View your contract: {{contract_link}}
+View your contract: \{\{contract_link\}\}
 ```
 
 **What the client receives:**
-```
+```text
 Hi Sarah,
 
 Your Wedding session on October 15, 2024 is confirmed!
@@ -63,15 +63,15 @@ The system automatically pulls data from the lead, job, quote, or contract recor
 
 All variables use the same format:
 
-```
-{{variable_name}}
+```text
+\{\{variable_name\}\}
 ```
 
 **Rules:**
-- Must start and end with double curly braces `{{ }}`
+- Must start and end with double curly braces `\{\{ \}\}`
 - Variable names use lowercase with underscores: `client_name` not `ClientName`
-- No spaces inside the braces: `{{client_name}}` not `{{ client_name }}`
-- Case-sensitive: `{{Client_Name}}` won't work
+- No spaces inside the braces: `\{\{client_name\}\}` not `\{\{ client_name \}\}`
+- Case-sensitive: `\{\{Client_Name\}\}` won't work
 
 **Inserting variables:**
 
@@ -81,27 +81,27 @@ All variables use the same format:
 - It's inserted at your cursor with correct syntax
 
 **Option 2: Type Manually**
-- Type exactly: `{{variable_name}}`
+- Type exactly: `\{\{variable_name\}\}`
 - Make sure spelling and case match exactly
 
 ### Client Information
 
 Variables related to your client.
 
-#### {{client_name}}
+#### \{\{client_name\}\}
 
 **What it does:** Client's full name or first name (depending on your settings)
 
 **Example output:** "Sarah Thompson" or "Sarah"
 
 **Common uses:**
-- Email greetings: `Hi {{client_name}},`
-- Subject lines: `{{client_name}}, Your Gallery is Ready!`
-- Personalization: `Thanks {{client_name}} for choosing us!`
+- Email greetings: `Hi \{\{client_name\}\},`
+- Subject lines: `\{\{client_name\}\}, Your Gallery is Ready!`
+- Personalization: `Thanks \{\{client_name\}\} for choosing us!`
 
 **Example template:**
-```
-Hi {{client_name}},
+```text
+Hi \{\{client_name\}\},
 
 I'm so excited to work with you on your upcoming session!
 
@@ -110,7 +110,7 @@ Emma
 ```
 
 **What the client sees:**
-```
+```text
 Hi Sarah,
 
 I'm so excited to work with you on your upcoming session!
@@ -119,7 +119,7 @@ Best,
 Emma
 ```
 
-#### {{client_email}}
+#### \{\{client_email\}\}
 
 **What it does:** Client's email address
 
@@ -131,11 +131,11 @@ Emma
 - Account confirmation messages
 
 **Example template:**
-```
-Account created for: {{client_email}}
+```text
+Account created for: \{\{client_email\}\}
 ```
 
-#### {{client_phone}}
+#### \{\{client_phone\}\}
 
 **What it does:** Client's phone number (formatted)
 
@@ -147,25 +147,25 @@ Account created for: {{client_email}}
 - Rarely needed in most templates
 
 **Example template:**
-```
+```text
 If you have questions before your session, call or text me
-or reach me at the number I have on file: {{client_phone}}
+or reach me at the number I have on file: \{\{client_phone\}\}
 ```
 
-#### {{client_partner_name}}
+#### \{\{client_partner_name\}\}
 
 **What it does:** Partner/spouse name (for couples)
 
 **Example output:** "John"
 
 **Common uses:**
-- Wedding emails: `Hi {{client_name}} and {{client_partner_name}},`
+- Wedding emails: `Hi \{\{client_name\}\} and \{\{client_partner_name\}\},`
 - Engagement sessions
 - Couple portraits
 
 **Example template:**
-```
-Hi {{client_name}} and {{client_partner_name}},
+```text
+Hi \{\{client_name\}\} and \{\{client_partner_name\}\},
 
 Congratulations on your engagement! I'd love to photograph
 your love story.
@@ -175,7 +175,7 @@ Emma
 ```
 
 **What the couple sees:**
-```
+```text
 Hi Sarah and John,
 
 Congratulations on your engagement! I'd love to photograph
@@ -189,30 +189,30 @@ Emma
 
 Variables about the photography session or project.
 
-#### {{job_type}}
+#### \{\{job_type\}\}
 
 **What it does:** Type of photography job
 
 **Example output:** "Wedding", "Portrait", "Event", "Commercial", "Newborn", etc.
 
 **Common uses:**
-- Specifying what type of session: `Your {{job_type}} session...`
-- Subject lines: `Your {{job_type}} Quote`
+- Specifying what type of session: `Your \{\{job_type\}\} session...`
+- Subject lines: `Your \{\{job_type\}\} Quote`
 - Personalizing messages by genre
 
 **Example template:**
-```
-Hi {{client_name}},
+```text
+Hi \{\{client_name\}\},
 
-I'm excited about your upcoming {{job_type}} session!
-{{job_type}} photography is one of my favorite genres.
+I'm excited about your upcoming \{\{job_type\}\} session!
+\{\{job_type\}\} photography is one of my favorite genres.
 
 Best,
 Emma
 ```
 
 **What the client sees:**
-```
+```text
 Hi Sarah,
 
 I'm excited about your upcoming Wedding session!
@@ -222,30 +222,30 @@ Best,
 Emma
 ```
 
-#### {{session_date}}
+#### \{\{session_date\}\}
 
 **What it does:** Date of the photography session (formatted)
 
 **Example output:** "October 15, 2024" or "Saturday, October 15"
 
 **Common uses:**
-- Confirmations: `Your session on {{session_date}}...`
-- Reminders: `Your session is tomorrow ({{session_date}})!`
+- Confirmations: `Your session on \{\{session_date\}\}...`
+- Reminders: `Your session is tomorrow (\{\{session_date\}\})!`
 - Calendar references
 
 **Example template:**
-```
-Hi {{client_name}},
+```text
+Hi \{\{client_name\}\},
 
-Quick reminder: Your {{job_type}} session is scheduled for
-{{session_date}} at {{session_time}}.
+Quick reminder: Your \{\{job_type\}\} session is scheduled for
+\{\{session_date\}\} at \{\{session_time\}\}.
 
 See you soon!
 Emma
 ```
 
 **What the client sees:**
-```
+```text
 Hi Sarah,
 
 Quick reminder: Your Wedding session is scheduled for
@@ -255,7 +255,7 @@ See you soon!
 Emma
 ```
 
-#### {{session_time}}
+#### \{\{session_time\}\}
 
 **What it does:** Time of the photography session
 
@@ -267,14 +267,14 @@ Emma
 - Coordination with clients
 
 **Example template:**
-```
+```text
 Session Details:
-📅 {{session_date}}
-🕐 {{session_time}}
-📍 {{session_location}}
+📅 \{\{session_date\}\}
+🕐 \{\{session_time\}\}
+📍 \{\{session_location\}\}
 ```
 
-#### {{session_location}}
+#### \{\{session_location\}\}
 
 **What it does:** Location or venue name
 
@@ -286,20 +286,20 @@ Session Details:
 - Direction references
 
 **Example template:**
-```
-We'll meet at {{session_location}} on {{session_date}} at {{session_time}}.
+```text
+We'll meet at \{\{session_location\}\} on \{\{session_date\}\} at \{\{session_time\}\}.
 
 If you need directions, let me know!
 ```
 
 **What the client sees:**
-```
+```text
 We'll meet at Willow Creek Barn on October 15, 2024 at 10:00 AM.
 
 If you need directions, let me know!
 ```
 
-#### {{job_notes}}
+#### \{\{job_notes\}\}
 
 **What it does:** Any internal notes about the job (use carefully!)
 
@@ -316,35 +316,35 @@ If you need directions, let me know!
 
 Variables related to money and invoices.
 
-#### {{quote_total}}
+#### \{\{quote_total\}\}
 
 **What it does:** Total amount of the quote
 
 **Example output:** "$2,500" or "$2,500.00"
 
 **Common uses:**
-- Quote emails: `Total investment: {{quote_total}}`
+- Quote emails: `Total investment: \{\{quote_total\}\}`
 - Pricing summaries
 - Confirmation of amounts
 
 **Example template:**
-```
-Hi {{client_name}},
+```text
+Hi \{\{client_name\}\},
 
-Your custom {{job_type}} quote is ready!
+Your custom \{\{job_type\}\} quote is ready!
 
-Total investment: {{quote_total}}
-Deposit to book: {{deposit_amount}}
-Balance due: {{balance_amount}}
+Total investment: \{\{quote_total\}\}
+Deposit to book: \{\{deposit_amount\}\}
+Balance due: \{\{balance_amount\}\}
 
-View full details: {{quote_link}}
+View full details: \{\{quote_link\}\}
 
 Best,
 Emma
 ```
 
 **What the client sees:**
-```
+```text
 Hi Sarah,
 
 Your custom Wedding quote is ready!
@@ -359,26 +359,26 @@ Best,
 Emma
 ```
 
-#### {{deposit_amount}}
+#### \{\{deposit_amount\}\}
 
 **What it does:** Amount of the deposit/retainer
 
 **Example output:** "$1,250", "$500.00"
 
 **Common uses:**
-- Booking confirmations: `Deposit of {{deposit_amount}} due`
+- Booking confirmations: `Deposit of \{\{deposit_amount\}\} due`
 - Payment reminders
 - Invoice descriptions
 
 **Example template:**
-```
-To secure your booking, a deposit of {{deposit_amount}} is due
-by {{deposit_due_date}}.
+```text
+To secure your booking, a deposit of \{\{deposit_amount\}\} is due
+by \{\{deposit_due_date\}\}.
 
-Pay your deposit: {{invoice_link}}
+Pay your deposit: \{\{invoice_link\}\}
 ```
 
-#### {{balance_amount}}
+#### \{\{balance_amount\}\}
 
 **What it does:** Remaining balance after deposit
 
@@ -390,15 +390,15 @@ Pay your deposit: {{invoice_link}}
 - Quote summaries
 
 **Example template:**
-```
+```text
 Payment Schedule:
-- Deposit: {{deposit_amount}} (due at booking)
-- Balance: {{balance_amount}} (due before session)
+- Deposit: \{\{deposit_amount\}\} (due at booking)
+- Balance: \{\{balance_amount\}\} (due before session)
 
-Total: {{quote_total}}
+Total: \{\{quote_total\}\}
 ```
 
-#### {{payment_amount}}
+#### \{\{payment_amount\}\}
 
 **What it does:** Amount of a specific payment/invoice
 
@@ -410,13 +410,13 @@ Total: {{quote_total}}
 - Receipt notifications
 
 **Example template:**
-```
-Thank you for your payment of {{payment_amount}}!
+```text
+Thank you for your payment of \{\{payment_amount\}\}!
 
-Your remaining balance is {{balance_amount}}.
+Your remaining balance is \{\{balance_amount\}\}.
 ```
 
-#### {{deposit_due_date}}
+#### \{\{deposit_due_date\}\}
 
 **What it does:** When the deposit payment is due (formatted date)
 
@@ -428,13 +428,13 @@ Your remaining balance is {{balance_amount}}.
 - Deadline communications
 
 **Example template:**
-```
-Your deposit of {{deposit_amount}} is due by {{deposit_due_date}}.
+```text
+Your deposit of \{\{deposit_amount\}\} is due by \{\{deposit_due_date\}\}.
 
-Pay here: {{invoice_link}}
+Pay here: \{\{invoice_link\}\}
 ```
 
-#### {{final_due_date}}
+#### \{\{final_due_date\}\}
 
 **What it does:** When the final balance is due
 
@@ -446,13 +446,13 @@ Pay here: {{invoice_link}}
 - Timeline confirmations
 
 **Example template:**
-```
+```text
 Payment Schedule:
-✅ Deposit: {{deposit_amount}} - Due {{deposit_due_date}}
-⏰ Balance: {{balance_amount}} - Due {{final_due_date}}
+✅ Deposit: \{\{deposit_amount\}\} - Due \{\{deposit_due_date\}\}
+⏰ Balance: \{\{balance_amount\}\} - Due \{\{final_due_date\}\}
 ```
 
-#### {{invoice_number}}
+#### \{\{invoice_number\}\}
 
 **What it does:** Invoice reference number
 
@@ -464,19 +464,19 @@ Payment Schedule:
 - Accounting communications
 
 **Example template:**
-```
-Invoice #{{invoice_number}}
-Amount due: {{payment_amount}}
-Due date: {{final_due_date}}
+```text
+Invoice #\{\{invoice_number\}\}
+Amount due: \{\{payment_amount\}\}
+Due date: \{\{final_due_date\}\}
 
-Pay here: {{invoice_link}}
+Pay here: \{\{invoice_link\}\}
 ```
 
 ### Important Links
 
 Variables that generate URLs to portals and resources.
 
-#### {{quote_link}}
+#### \{\{quote_link\}\}
 
 **What it does:** URL to view the online quote
 
@@ -488,12 +488,12 @@ Variables that generate URLs to portals and resources.
 - Quote reminders
 
 **Example template:**
-```
-Hi {{client_name}},
+```text
+Hi \{\{client_name\}\},
 
-Your {{job_type}} quote is ready!
+Your \{\{job_type\}\} quote is ready!
 
-View your quote: {{quote_link}}
+View your quote: \{\{quote_link\}\}
 
 The quote includes package options, pricing, and payment details.
 Review it at your convenience!
@@ -503,7 +503,7 @@ Emma
 ```
 
 **What the client sees:**
-```
+```text
 Hi Sarah,
 
 Your Wedding quote is ready!
@@ -519,7 +519,7 @@ Emma
 
 **Important:** Only use this variable in emails sent AFTER a quote is created!
 
-#### {{contract_link}}
+#### \{\{contract_link\}\}
 
 **What it does:** URL to view and sign the contract
 
@@ -531,13 +531,13 @@ Emma
 - Booking confirmations
 
 **Example template:**
-```
-Hi {{client_name}},
+```text
+Hi \{\{client_name\}\},
 
 Congrats on booking! To finalize everything, please sign
 your contract:
 
-{{contract_link}}
+\{\{contract_link\}\}
 
 The contract outlines what's included, payment schedule,
 cancellation policy, and other important details.
@@ -549,7 +549,7 @@ Emma
 
 **Important:** Only use after a contract exists for the job!
 
-#### {{invoice_link}}
+#### \{\{invoice_link\}\}
 
 **What it does:** URL to view and pay an invoice
 
@@ -561,15 +561,15 @@ Emma
 - Invoice notifications
 
 **Example template:**
-```
-Hi {{client_name}},
+```text
+Hi \{\{client_name\}\},
 
-Your {{job_type}} deposit invoice is ready!
+Your \{\{job_type\}\} deposit invoice is ready!
 
-Amount due: {{deposit_amount}}
-Due date: {{deposit_due_date}}
+Amount due: \{\{deposit_amount\}\}
+Due date: \{\{deposit_due_date\}\}
 
-Pay your invoice: {{invoice_link}}
+Pay your invoice: \{\{invoice_link\}\}
 
 Thank you!
 Emma
@@ -577,7 +577,7 @@ Emma
 
 **Important:** Only use after an invoice is created!
 
-#### {{gallery_link}}
+#### \{\{gallery_link\}\}
 
 **What it does:** URL to view the photo gallery
 
@@ -589,14 +589,14 @@ Emma
 - Download instructions
 
 **Example template:**
-```
-Hi {{client_name}},
+```text
+Hi \{\{client_name\}\},
 
 Your photos are ready! 📸
 
-View your gallery: {{gallery_link}}
+View your gallery: \{\{gallery_link\}\}
 
-Your gallery includes {{photo_count}} edited photos available
+Your gallery includes \{\{photo_count\}\} edited photos available
 for viewing, downloading, and print ordering.
 
 Gallery access expires in 30 days, so be sure to download
@@ -608,7 +608,7 @@ Emma
 
 **Important:** Only use after you've uploaded a gallery for the job!
 
-#### {{questionnaire_link}}
+#### \{\{questionnaire_link\}\}
 
 **What it does:** URL to fill out a questionnaire
 
@@ -620,13 +620,13 @@ Emma
 - Information gathering
 
 **Example template:**
-```
-Hi {{client_name}},
+```text
+Hi \{\{client_name\}\},
 
-To help me prepare for your {{job_type}} session, please
+To help me prepare for your \{\{job_type\}\} session, please
 fill out this quick questionnaire:
 
-{{questionnaire_link}}
+\{\{questionnaire_link\}\}
 
 It takes about 5 minutes and helps me understand your vision,
 preferences, and any special requests.
@@ -637,7 +637,7 @@ Emma
 
 **Important:** Only use after assigning a questionnaire to the job!
 
-#### {{portal_link}}
+#### \{\{portal_link\}\}
 
 **What it does:** General URL to client's portal homepage
 
@@ -649,13 +649,13 @@ Emma
 - General portal access
 
 **Example template:**
-```
-Hi {{client_name}},
+```text
+Hi \{\{client_name\}\},
 
 You can always access your project details, contracts, invoices,
 and gallery through your client portal:
 
-{{portal_link}}
+\{\{portal_link\}\}
 
 Bookmark this link for easy access!
 
@@ -666,7 +666,7 @@ Emma
 
 Variables about you and your business.
 
-#### {{your_name}}
+#### \{\{your_name\}\}
 
 **What it does:** Your name (or business owner name)
 
@@ -678,22 +678,22 @@ Variables about you and your business.
 - Sign-offs
 
 **Example template:**
-```
+```text
 Looking forward to working with you!
 
 Best,
-{{your_name}}
+\{\{your_name\}\}
 ```
 
 **What the client sees:**
-```
+```text
 Looking forward to working with you!
 
 Best,
 Emma Rodriguez
 ```
 
-#### {{your_business}}
+#### \{\{your_business\}\}
 
 **What it does:** Your business name
 
@@ -701,20 +701,20 @@ Emma Rodriguez
 
 **Common uses:**
 - Email signatures
-- Subject lines: `Your Quote from {{your_business}}`
+- Subject lines: `Your Quote from \{\{your_business\}\}`
 - Branding
 
 **Example template:**
-```
-Thank you for choosing {{your_business}}!
+```text
+Thank you for choosing \{\{your_business\}\}!
 
-{{your_name}}
-{{your_business}}
-{{your_phone}}
-{{your_website}}
+\{\{your_name\}\}
+\{\{your_business\}\}
+\{\{your_phone\}\}
+\{\{your_website\}\}
 ```
 
-#### {{your_email}}
+#### \{\{your_email\}\}
 
 **What it does:** Your business email address
 
@@ -726,13 +726,13 @@ Thank you for choosing {{your_business}}!
 - Reply instructions
 
 **Example template:**
-```
+```text
 Questions? Reply to this email or reach me at:
-📧 {{your_email}}
-📞 {{your_phone}}
+📧 \{\{your_email\}\}
+📞 \{\{your_phone\}\}
 ```
 
-#### {{your_phone}}
+#### \{\{your_phone\}\}
 
 **What it does:** Your business phone number
 
@@ -744,12 +744,12 @@ Questions? Reply to this email or reach me at:
 - "Call me" messages
 
 **Example template:**
-```
+```text
 Feel free to call or text with any questions:
-{{your_phone}}
+\{\{your_phone\}\}
 ```
 
-#### {{your_website}}
+#### \{\{your_website\}\}
 
 **What it does:** Your website URL
 
@@ -761,20 +761,20 @@ Feel free to call or text with any questions:
 - Portfolio references
 
 **Example template:**
-```
+```text
 Want to see more of my work? Check out my portfolio:
-{{your_website}}
+\{\{your_website\}\}
 
 Best,
-{{your_name}}
-{{your_business}}
+\{\{your_name\}\}
+\{\{your_business\}\}
 ```
 
 ### Dates & Times
 
 Variables related to dates and deadlines.
 
-#### {{today}}
+#### \{\{today\}\}
 
 **What it does:** Today's date (when email is sent)
 
@@ -782,10 +782,10 @@ Variables related to dates and deadlines.
 
 **Common uses:**
 - Date-stamping emails
-- Timelines ("As of {{today}}, your balance is...")
+- Timelines ("As of \{\{today\}\}, your balance is...")
 - Rarely needed in most templates
 
-#### {{days_until_session}}
+#### \{\{days_until_session\}\}
 
 **What it does:** Number of days until the session
 
@@ -797,18 +797,18 @@ Variables related to dates and deadlines.
 - Session proximity notifications
 
 **Example template:**
-```
-Hi {{client_name}},
+```text
+Hi \{\{client_name\}\},
 
-Your {{job_type}} session is {{days_until_session}} away!
+Your \{\{job_type\}\} session is \{\{days_until_session\}\} away!
 
-So excited to see you on {{session_date}}!
+So excited to see you on \{\{session_date\}\}!
 
 Emma
 ```
 
 **What the client sees:**
-```
+```text
 Hi Sarah,
 
 Your Wedding session is 7 days away!
@@ -818,7 +818,7 @@ So excited to see you on October 15, 2024!
 Emma
 ```
 
-#### {{days_since_gallery}}
+#### \{\{days_since_gallery\}\}
 
 **What it does:** Days since gallery was delivered
 
@@ -830,22 +830,22 @@ Emma
 - Follow-up timing
 
 **Example template:**
-```
-Hi {{client_name}},
+```text
+Hi \{\{client_name\}\},
 
-It's been {{days_since_gallery}} since I delivered your gallery.
+It's been \{\{days_since_gallery\}\} since I delivered your gallery.
 
 Your gallery access expires in 30 days, so be sure to
 download your favorites soon!
 
-View gallery: {{gallery_link}}
+View gallery: \{\{gallery_link\}\}
 ```
 
 ### Gallery & Delivery
 
 Variables related to photo delivery.
 
-#### {{photo_count}}
+#### \{\{photo_count\}\}
 
 **What it does:** Number of photos in the gallery
 
@@ -857,12 +857,12 @@ Variables related to photo delivery.
 - Summary information
 
 **Example template:**
-```
-Hi {{client_name}},
+```text
+Hi \{\{client_name\}\},
 
-Your gallery is ready with {{photo_count}} edited photos!
+Your gallery is ready with \{\{photo_count\}\} edited photos!
 
-View your gallery: {{gallery_link}}
+View your gallery: \{\{gallery_link\}\}
 
 All photos are high-resolution and ready for download.
 
@@ -871,7 +871,7 @@ Emma
 ```
 
 **What the client sees:**
-```
+```text
 Hi Sarah,
 
 Your gallery is ready with 250 edited photos!
@@ -884,7 +884,7 @@ Enjoy!
 Emma
 ```
 
-#### {{gallery_expiration_date}}
+#### \{\{gallery_expiration_date\}\}
 
 **What it does:** Date when gallery access expires
 
@@ -896,8 +896,8 @@ Emma
 - Download deadline notices
 
 **Example template:**
-```
-Your gallery will be available until {{gallery_expiration_date}}.
+```text
+Your gallery will be available until \{\{gallery_expiration_date\}\}.
 
 Please download your favorites before this date!
 ```
@@ -906,7 +906,7 @@ Please download your favorites before this date!
 
 Variables for selected packages and extras.
 
-#### {{selected_package}}
+#### \{\{selected_package\}\}
 
 **What it does:** Name of the package the client selected
 
@@ -918,21 +918,21 @@ Variables for selected packages and extras.
 - Contract references
 
 **Example template:**
-```
-Hi {{client_name}},
+```text
+Hi \{\{client_name\}\},
 
-You've selected: {{selected_package}}
+You've selected: \{\{selected_package\}\}
 
 This includes:
-- {{package_description}}
+- \{\{package_description\}\}
 
-Total investment: {{quote_total}}
+Total investment: \{\{quote_total\}\}
 
 Best,
 Emma
 ```
 
-#### {{package_description}}
+#### \{\{package_description\}\}
 
 **What it does:** Description/details of the selected package
 
@@ -943,7 +943,7 @@ Emma
 - Booking confirmations
 - Package summaries
 
-#### {{selected_addons}}
+#### \{\{selected_addons\}\}
 
 **What it does:** List of add-ons the client selected
 
@@ -955,53 +955,53 @@ Emma
 - Invoice descriptions
 
 **Example template:**
-```
-Package: {{selected_package}}
-Add-ons: {{selected_addons}}
+```text
+Package: \{\{selected_package\}\}
+Add-ons: \{\{selected_addons\}\}
 
-Total: {{quote_total}}
+Total: \{\{quote_total\}\}
 ```
 
 ### Conditional Variables
 
 These variables return true/false and are used with conditional logic.
 
-#### {{deposit_paid}}
+#### \{\{deposit_paid\}\}
 
 **What it does:** True if deposit has been paid
 
 **Use with conditionals:**
-```
+```text
 {{#if deposit_paid}}
 ✅ Deposit received! You're all set.
-{{else}}
-Reminder: Your deposit of {{deposit_amount}} is still due.
-Pay here: {{invoice_link}}
+\{\{else\}\}
+Reminder: Your deposit of \{\{deposit_amount\}\} is still due.
+Pay here: \{\{invoice_link\}\}
 {{/if}}
 ```
 
-#### {{contract_signed}}
+#### \{\{contract_signed\}\}
 
 **What it does:** True if contract has been signed
 
 **Use with conditionals:**
-```
+```text
 {{#if contract_signed}}
 ✅ Contract signed!
-{{else}}
-⏰ Please sign your contract: {{contract_link}}
+\{\{else\}\}
+⏰ Please sign your contract: \{\{contract_link\}\}
 {{/if}}
 ```
 
-#### {{gallery_uploaded}}
+#### \{\{gallery_uploaded\}\}
 
 **What it does:** True if gallery has been delivered
 
 **Use with conditionals:**
-```
+```text
 {{#if gallery_uploaded}}
-Your gallery is ready! View here: {{gallery_link}}
-{{else}}
+Your gallery is ready! View here: \{\{gallery_link\}\}
+\{\{else\}\}
 I'm still editing your photos - they'll be ready soon!
 {{/if}}
 ```
@@ -1013,44 +1013,44 @@ Not all variables work in all situations. Here's when each variable is available
 #### Lead Emails (Before Booking)
 
 **Available:**
-- Client info: `{{client_name}}`, `{{client_email}}`, `{{client_phone}}`
-- Business info: `{{your_name}}`, `{{your_business}}`, etc.
-- Quote variables: `{{quote_link}}`, `{{quote_total}}`, etc.
+- Client info: `\{\{client_name\}\}`, `\{\{client_email\}\}`, `\{\{client_phone\}\}`
+- Business info: `\{\{your_name\}\}`, `\{\{your_business\}\}`, etc.
+- Quote variables: `\{\{quote_link\}\}`, `\{\{quote_total\}\}`, etc.
 
 **NOT Available:**
-- Job-specific: `{{session_date}}`, `{{session_time}}`
-- Contract: `{{contract_link}}`
-- Gallery: `{{gallery_link}}`
-- Invoices: `{{invoice_link}}` (unless you send a quote with deposit)
+- Job-specific: `\{\{session_date\}\}`, `\{\{session_time\}\}`
+- Contract: `\{\{contract_link\}\}`
+- Gallery: `\{\{gallery_link\}\}`
+- Invoices: `\{\{invoice_link\}\}` (unless you send a quote with deposit)
 
 #### Job Emails (After Booking)
 
 **Available:**
 - Everything from lead emails, PLUS:
-- Job info: `{{job_type}}`, `{{session_date}}`, `{{session_location}}`
-- Contract: `{{contract_link}}` (once contract exists)
-- Invoices: `{{invoice_link}}` (once invoices created)
-- Gallery: `{{gallery_link}}` (once gallery uploaded)
+- Job info: `\{\{job_type\}\}`, `\{\{session_date\}\}`, `\{\{session_location\}\}`
+- Contract: `\{\{contract_link\}\}` (once contract exists)
+- Invoices: `\{\{invoice_link\}\}` (once invoices created)
+- Gallery: `\{\{gallery_link\}\}` (once gallery uploaded)
 
 #### Invoice Emails
 
 **Available:**
 - All job variables
-- Payment variables: `{{payment_amount}}`, `{{invoice_number}}`, `{{invoice_link}}`
-- Balance info: `{{balance_amount}}`
+- Payment variables: `\{\{payment_amount\}\}`, `\{\{invoice_number\}\}`, `\{\{invoice_link\}\}`
+- Balance info: `\{\{balance_amount\}\}`
 
 #### Gallery Emails
 
 **Available:**
 - All job variables
-- Gallery variables: `{{gallery_link}}`, `{{photo_count}}`, `{{gallery_expiration_date}}`
+- Gallery variables: `\{\{gallery_link\}\}`, `\{\{photo_count\}\}`, `\{\{gallery_expiration_date\}\}`
 
 ### Testing Variables
 
 Always test templates to ensure variables populate correctly.
 
 **Testing checklist:**
-- [ ] All variables show actual data (not `{{variable_name}}`)
+- [ ] All variables show actual data (not `\{\{variable_name\}\}`)
 - [ ] Links are clickable and work
 - [ ] Dates format correctly
 - [ ] Money amounts show currency symbol
@@ -1068,18 +1068,18 @@ Always test templates to ensure variables populate correctly.
 
 **Mistake 1: Typos in Variable Names**
 
-❌ `{{clint_name}}` (typo)
-✅ `{{client_name}}` (correct)
+❌ `\{\{clint_name\}\}` (typo)
+✅ `\{\{client_name\}\}` (correct)
 
 **Mistake 2: Wrong Syntax**
 
 ❌ `\{client_name\}` (single braces)
-❌ `{{ client_name }}` (spaces inside)
-✅ `{{client_name}}` (double braces, no spaces)
+❌ `\{\{ client_name \}\}` (spaces inside)
+✅ `\{\{client_name\}\}` (double braces, no spaces)
 
 **Mistake 3: Using Variables Before They Exist**
 
-❌ Using `{{gallery_link}}` in a quote email (no gallery yet!)
+❌ Using `\{\{gallery_link\}\}` in a quote email (no gallery yet!)
 ✅ Only use variables appropriate for that email's context
 
 **Mistake 4: Not Testing**
@@ -1090,7 +1090,7 @@ Always test templates to ensure variables populate correctly.
 **Mistake 5: Hardcoding Info That Should Be Variables**
 
 ❌ "View your quote at: https://..."
-✅ "View your quote: {{quote_link}}"
+✅ "View your quote: \{\{quote_link\}\}"
 
 Variables automatically update if URLs change!
 
@@ -1099,10 +1099,10 @@ Variables automatically update if URLs change!
 Some systems allow custom variables you define yourself.
 
 **Example custom variables:**
-- `{{studio_address}}` - Your physical address
-- `{{instagram_handle}}` - Your Instagram username
-- `{{booking_fee}}` - A specific fee amount
-- `{{turnaround_time}}` - Your typical delivery timeline
+- `\{\{studio_address\}\}` - Your physical address
+- `\{\{instagram_handle\}\}` - Your Instagram username
+- `\{\{booking_fee\}\}` - A specific fee amount
+- `\{\{turnaround_time\}\}` - Your typical delivery timeline
 
 Check your system's documentation for how to create custom variables!
 

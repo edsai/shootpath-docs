@@ -492,19 +492,19 @@ If email templates aren't loading or sending:
 
 **Template Variables Not Replacing:**
 
-Example: Email shows "{{client_name}}" instead of "John Smith"
+Example: Email shows "\{\{client_name\}\}" instead of "John Smith"
 
 **Cause:** Template syntax error or missing data.
 
 **Solution:**
 1. Go to **Settings → Email Templates**
 2. Click the template having issues
-3. Check variable syntax: {{variable_name}} (two curly braces, no spaces)
+3. Check variable syntax: \{\{variable_name\}\} (two curly braces, no spaces)
 4. Common variables:
-   - {{client_name}}
-   - {{job_type}}
-   - {{quote_total}}
-   - {{invoice_due_date}}
+   - \{\{client_name\}\}
+   - \{\{job_type\}\}
+   - \{\{quote_total\}\}
+   - \{\{invoice_due_date\}\}
 5. Save template
 6. Send test email to yourself
 

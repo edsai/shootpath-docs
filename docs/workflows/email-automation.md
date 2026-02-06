@@ -62,7 +62,7 @@ Clients notice when you're on top of things. Automated confirmations and reminde
 Let's clarify the difference:
 
 **Email Templates:**
-Pre-written email content stored in ShootPath. They include placeholders for dynamic content like `{{clientName}}` or `{{sessionDate}}`.
+Pre-written email content stored in ShootPath. They include placeholders for dynamic content like `\{\{clientName\}\}` or `\{\{sessionDate\}\}`.
 
 **Think of templates as:** Your email scripts
 
@@ -74,16 +74,16 @@ Emails that workflows send automatically using templates. The workflow decides w
 **Example:**
 
 **Template:** "Contract Signing Request"
-```
-Hi {{clientName}},
+```text
+Hi \{\{clientName\}\},
 
 I'm so excited to work with you! Please review and sign your contract here:
-{{contractLink}}
+\{\{contractLink\}\}
 
 Let me know if you have any questions!
 
 Best,
-{{yourName}}
+\{\{yourName\}\}
 ```
 
 **Automated Email:** Job workflow sends this template automatically when a job is created and contract is generated.
@@ -175,14 +175,14 @@ To create a new email template:
 
 **Subject Line:**
 Keep it clear and personal:
-- ✅ "Your Contract is Ready, {{clientName}}!"
+- ✅ "Your Contract is Ready, \{\{clientName\}\}!"
 - ❌ "ShootPath Contract Notification"
 
 **Greeting:**
 Use placeholders for personalization:
-- "Hi {{clientName}},"
-- "Hey {{clientFirstName}}!"
-- "Hello {{clientName}} and {{secondaryClientName}}," (for weddings)
+- "Hi \{\{clientName\}\},"
+- "Hey \{\{clientFirstName\}\}!"
+- "Hello \{\{clientName\}\} and \{\{secondaryClientName\}\}," (for weddings)
 
 **Body:**
 Write in your voice! Don't sound like a robot:
@@ -191,9 +191,9 @@ Write in your voice! Don't sound like a robot:
 
 **Call to Action:**
 Make it clear what they should do:
-- "Click here to sign your contract: {{contractLink}}"
-- "View your gallery now: {{galleryLink}}"
-- "Pay your deposit: {{invoiceLink}}"
+- "Click here to sign your contract: \{\{contractLink\}\}"
+- "View your gallery now: \{\{galleryLink\}\}"
+- "Pay your deposit: \{\{invoiceLink\}\}"
 
 **Closing:**
 Sign off naturally:
@@ -203,9 +203,9 @@ Sign off naturally:
 
 **Signature:**
 Use placeholders for consistency:
-- "{{yourName}}"
-- "{{businessName}}"
-- "{{yourPhone}} | {{yourEmail}}"
+- "\{\{yourName\}\}"
+- "\{\{businessName\}\}"
+- "\{\{yourPhone\}\} | \{\{yourEmail\}\}"
 
 ### Dynamic Placeholders
 
@@ -214,61 +214,61 @@ Placeholders automatically fill in with job-specific information when emails sen
 **Available Placeholders:**
 
 **Client Information:**
-- `{{clientName}}` - Full name
-- `{{clientFirstName}}` - First name only
-- `{{clientEmail}}` - Email address
-- `{{clientPhone}}` - Phone number
-- `{{secondaryClientName}}` - For weddings with two clients
+- `\{\{clientName\}\}` - Full name
+- `\{\{clientFirstName\}\}` - First name only
+- `\{\{clientEmail\}\}` - Email address
+- `\{\{clientPhone\}\}` - Phone number
+- `\{\{secondaryClientName\}\}` - For weddings with two clients
 
 **Job Information:**
-- `{{jobType}}` - Wedding, Portrait, Event, etc.
-- `{{jobNumber}}` - JOB-2026-0015
-- `{{sessionDate}}` - February 15, 2026
-- `{{sessionTime}}` - 2:00 PM
-- `{{sessionLocation}}` - Central Park, NYC
+- `\{\{jobType\}\}` - Wedding, Portrait, Event, etc.
+- `\{\{jobNumber\}\}` - JOB-2026-0015
+- `\{\{sessionDate\}\}` - February 15, 2026
+- `\{\{sessionTime\}\}` - 2:00 PM
+- `\{\{sessionLocation\}\}` - Central Park, NYC
 
 **Financial Information:**
-- `{{totalAmount}}` - $3,500
-- `{{depositAmount}}` - $1,000
-- `{{balanceAmount}}` - $2,500
-- `{{invoiceLink}}` - Direct link to pay
+- `\{\{totalAmount\}\}` - $3,500
+- `\{\{depositAmount\}\}` - $1,000
+- `\{\{balanceAmount\}\}` - $2,500
+- `\{\{invoiceLink\}\}` - Direct link to pay
 
 **Business Information:**
-- `{{yourName}}` - Your name
-- `{{businessName}}` - Your business name
-- `{{yourEmail}}` - Your email
-- `{{yourPhone}}` - Your phone
-- `{{businessWebsite}}` - Your website URL
+- `\{\{yourName\}\}` - Your name
+- `\{\{businessName\}\}` - Your business name
+- `\{\{yourEmail\}\}` - Your email
+- `\{\{yourPhone\}\}` - Your phone
+- `\{\{businessWebsite\}\}` - Your website URL
 
 **Workflow Links:**
-- `{{quoteLink}}` - Link to view quote
-- `{{contractLink}}` - Link to sign contract
-- `{{invoiceLink}}` - Link to pay invoice
-- `{{questionnaireLink}}` - Link to questionnaire
-- `{{galleryLink}}` - Link to view gallery
-- `{{portalLink}}` - General client portal link
+- `\{\{quoteLink\}\}` - Link to view quote
+- `\{\{contractLink\}\}` - Link to sign contract
+- `\{\{invoiceLink\}\}` - Link to pay invoice
+- `\{\{questionnaireLink\}\}` - Link to questionnaire
+- `\{\{galleryLink\}\}` - Link to view gallery
+- `\{\{portalLink\}\}` - General client portal link
 
 **Example Template:**
 
-```
-Subject: Your {{jobType}} Gallery is Ready!
+```text
+Subject: Your \{\{jobType\}\} Gallery is Ready!
 
-Hi {{clientFirstName}},
+Hi \{\{clientFirstName\}\},
 
 Your photos are here! 📸
 
-I'm so excited to share your {{jobType}} gallery with you. Click below to view and download your photos:
+I'm so excited to share your \{\{jobType\}\} gallery with you. Click below to view and download your photos:
 
-{{galleryLink}}
+\{\{galleryLink\}\}
 
 You can download high-resolution files, share favorites with friends and family, and order prints directly from the gallery.
 
 If you have any questions or would like to order an album or prints, just let me know!
 
 Best,
-{{yourName}}
-{{businessName}}
-{{yourPhone}} | {{yourEmail}}
+\{\{yourName\}\}
+\{\{businessName\}\}
+\{\{yourPhone\}\} | \{\{yourEmail\}\}
 ```
 
 **When sent, becomes:**
@@ -412,7 +412,7 @@ Automated doesn't mean generic! Here's how to make automated emails feel persona
 "Your contract has been generated and is awaiting signature."
 
 **Personal:**
-"I'm so excited to work with you! Please sign your contract here so we can get started: {{contractLink}}"
+"I'm so excited to work with you! Please sign your contract here so we can get started: \{\{contractLink\}\}"
 
 #### 2. Add Your Voice
 
@@ -429,7 +429,7 @@ Write like you talk! If you're bubbly and enthusiastic, show it. If you're calm 
 Don't assume clients remember every detail.
 
 **Bad:**
-"Click here: {{galleryLink}}"
+"Click here: \{\{galleryLink\}\}"
 
 **Good:**
 "Remember our amazing sunset session at the beach last month? Your photos are finally ready! I edited 45 of my favorites for you to download."
@@ -442,14 +442,14 @@ Don't assume clients remember every detail.
 **Personal:**
 "Hi Sarah!"
 
-Placeholders like `{{clientFirstName}}` make this easy!
+Placeholders like `\{\{clientFirstName\}\}` make this easy!
 
 #### 5. Add a Personal Line Manually
 
 Even though the email is automated, you can add a quick personal note before it sends:
 
 **Automated content:**
-"Your gallery is ready! {{galleryLink}}"
+"Your gallery is ready! \{\{galleryLink\}\}"
 
 **You add manually:**
 "P.S. I especially loved the photos of you and your grandma—so sweet!"
@@ -475,7 +475,7 @@ Before activating automated emails, test them!
 **What to check:**
 
 **Placeholders working?**
-Do `{{clientName}}` and `{{galleryLink}}` populate correctly?
+Do `\{\{clientName\}\}` and `\{\{galleryLink\}\}` populate correctly?
 
 **Links working?**
 Click all links—do they go to the right place?
@@ -658,7 +658,7 @@ Every 3-6 months, review your automated emails. Update wording, fix issues, impr
 - Check email log for error messages
 
 **Placeholders not populating?**
-- Ensure you're using correct placeholder syntax: `{{clientName}}` not `\{clientName\}`
+- Ensure you're using correct placeholder syntax: `\{\{clientName\}\}` not `\{clientName\}`
 - Verify the data exists (can't show session date if none is set)
 
 **Wrong email sent?**

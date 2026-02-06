@@ -552,7 +552,7 @@ Yes:
 1. Go to **Settings → Integrations → Google Calendar**
 2. Click **Advanced Options → Event Template**
 3. Customize title and description
-4. Use variables: {{client_name}}, {{job_type}}, {{shoot_date}}
+4. Use variables: \{\{client_name\}\}, \{\{job_type\}\}, \{\{shoot_date\}\}
 
 **Why do events disappear from Google Calendar?**
 Possible reasons:
