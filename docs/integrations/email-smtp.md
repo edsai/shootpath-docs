@@ -255,13 +255,13 @@ mail.yourdomain.com
 
 **Username:**
 ```
-yourname@yourdomain.com
+[yourname@yourdomain.com]
 ```
 (Usually your full email address)
 
 **Password:**
 ```
-your-email-password
+[enter your email password]
 ```
 
 **From Name:**
@@ -272,7 +272,7 @@ Your Business Name
 
 **From Address:**
 ```
-yourname@yourdomain.com
+[yourname@yourdomain.com]
 ```
 (Must match the account you're authenticating with)
 
