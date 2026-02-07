@@ -4,14 +4,21 @@
 
 Before you start using ShootPath, you'll want to configure a few essential settings so your business info appears correctly in emails, invoices, and contracts.
 
+**Settings Interface:**
+
+![Settings Page](/img/screenshots/interface/settings-annotated.png)
+
+1. **Settings Categories** - Navigate between different settings sections
+2. **Business Settings** - Configure name, logo, contact info, and branding
+3. **Settings Cards** - Each card represents a configurable aspect
+4. **Save Changes** - Changes save automatically when updated
+
 **Critical Settings to Configure First:**
 
 1. **Business Information** - Your business name, email, and phone
 2. **Photographer Name** - How you sign your emails
 3. **Email Signature** - Appears at the bottom of all outgoing emails
 4. **Business Logo** (optional but recommended)
-
-![Settings overview](../../static/img/screenshots/getting-started/settings-overview.png)
 
 **Where to Find Settings:**
 Click **"Settings"** in the left sidebar navigation.

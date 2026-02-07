@@ -4,14 +4,20 @@
 
 A job in ShootPath represents an active photography project - from the moment a client books you until you deliver their final gallery.
 
+**Jobs Interface:**
+
+![Jobs Page](/img/screenshots/interface/jobs-annotated.png)
+
+1. **Search & Filter** - Search jobs or filter by status
+2. **Jobs List** - All jobs with client, type, status, and workflow progress
+3. **Workflow Progress** - Track last completed step and next action needed
+4. **Quick Actions** - View details, contracts, invoices, or galleries
+
 **Key Concepts:**
 
 - Jobs are created when a client accepts your quote
 - Each job has a workflow that guides you through the process
 - Track contracts, payments, shoot dates, and gallery delivery all in one place
-- View all active jobs from the Jobs page in the sidebar
-
-![Jobs list](../../static/img/screenshots/getting-started/jobs-list.png)
 
 **What's in a Job:**
 - **Client info** - Who you're shooting for

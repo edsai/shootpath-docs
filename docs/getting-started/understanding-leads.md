@@ -4,6 +4,15 @@
 
 A lead is a potential client who's shown interest in your photography services. Leads are the starting point of your client journey in ShootPath.
 
+**Leads Interface:**
+
+![Leads Page](/img/screenshots/interface/leads-annotated.png)
+
+1. **Quick Actions** - Create new leads or add calendar events
+2. **Filter Leads** - Filter by status and job type
+3. **Leads Overview** - View all inquiries with client info, status, and dates
+4. **Lead Actions** - Send quotes, follow up, or convert to jobs
+
 **What is a Lead?**
 - Someone who filled out your contact form
 - A referral from a past client

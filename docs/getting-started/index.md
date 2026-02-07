@@ -4,15 +4,15 @@
 
 Your dashboard is your command center in ShootPath - it shows you everything happening in your photography business right now.
 
-**Key Metrics at a Glance:**
+**Key Areas:**
 
-![Dashboard overview](../../static/img/screenshots/getting-started/dashboard-full.png)
+![Dashboard Interface](/img/screenshots/interface/dashboard-annotated.png)
 
-- **New Leads** - Client inquiries from the past week
-- **Upcoming Shoots** - Sessions scheduled in the next 14 days
-- **Active Leads** - Potential clients waiting for your response
-- **In Production** - Jobs currently in progress (from contract signed to gallery delivered)
-- **Revenue** - Total income for the current month and year
+1. **Main Navigation** - Switch between Dashboard, Calendar, Leads, Jobs, Galleries, Clients, Reports, and Settings
+2. **Quick Actions** - Create new leads, check notifications, toggle theme, and access your account
+3. **Key Metrics** - Track new leads, upcoming shoots, active leads, and jobs in production
+4. **Revenue Overview** - See monthly and yearly revenue, average job value, and financial trends
+5. **Sessions Calendar** - View confirmed sessions and jobs needing follow-up
 
 **Quick Actions:**
 - Click **"+ New Lead"** in the top-right to add a client inquiry
@@ -21,7 +21,7 @@ Your dashboard is your command center in ShootPath - it shows you everything hap
 
 **Recent Activity** shows what's happening across your business - quotes accepted, contracts signed, leads created - so you're always in the loop.
 
-**Next Steps:** [Explore the interface](./interface-overview), [create your first lead](./creating-a-lead), or [explore jobs](./understanding-jobs).
+**Next Steps:** [Create your first lead](./creating-a-lead) or [explore jobs](./understanding-jobs).
 
 ---
 
