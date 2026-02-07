@@ -21,7 +21,7 @@ Your dashboard is your command center in ShootPath - it shows you everything hap
 
 **Recent Activity** shows what's happening across your business - quotes accepted, contracts signed, leads created - so you're always in the loop.
 
-**Next Steps:** [Create your first lead](./creating-a-lead) or [explore jobs](./understanding-jobs).
+**Next Steps:** [Explore the interface](./interface-overview), [create your first lead](./creating-a-lead), or [explore jobs](./understanding-jobs).
 
 ---
 
